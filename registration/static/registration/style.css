@@ -1,0 +1,458 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../../../media/fonts/BebasNeue-Regular.eot');
+    src: url('../../../media/fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'), url('../../../media/fonts/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg'), url('../../../media/fonts/BebasNeue-Regular.ttf') format('truetype'), url('../../../media/fonts/BebasNeue-Regular.woff') format('woff'), url('../../../media/fonts/BebasNeue-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+.navbar-toggler {
+    border-color: rgb(255, 255, 255);
+  } 
+
+body,
+html {
+    font-family: 'Bebas Neue', cursive;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+nav {
+    background: #047835;
+    color: #fff;
+    border-bottom: #f5c00a 5px solid;
+    font-size: 20PX;
+    margin-top: -80px;
+}
+
+.btnuser {
+    background: url('../../../media/home/btn.png');
+    background-size: 100% 100%;
+    color: #047835 !important;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    max-width: 100%;
+    line-height: 30px;
+}
+.asteriskField{
+    color:red !important;
+}
+.btnuser:hover {
+    background: url('../../../media/home/btn.png');
+    background-size: 100% 100%;
+    color: #fff !important;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+#dpremios {
+    background: #cbe880;
+    background-size: auto;
+padding-top: 150px;
+padding-bottom: 20px;
+background-size: 100%;
+box-shadow: 5px 5px 10px rgb(100, 100, 100);
+margin-top: -90px;
+}
+
+#dpremios div h1 {
+    width: 250px;
+    max-width: 100%;
+    text-align: center;
+    color: #047835 !important;
+    font-size: 72px;
+}
+
+
+.grupopremio{
+    text-align: center;
+    line-height: 25px;
+    font-size: 25px;
+    color: #044821 !important;
+}
+
+.grupopremio img{
+    width:110px;
+    cursor: pointer;
+}
+.grupopremio p{
+    margin-top:10px;
+}
+.improfooter {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.improfooter img {
+    width: 800px;
+    max-width: 90%;
+}
+
+.footerbootellas {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #047835;
+    text-align: center;
+    padding: 30px;
+}
+
+#dinamica {
+    padding-top: 200px;
+    padding-bottom: 20px;
+    word-break: break-all;
+    margin-top: -150px;
+}
+
+
+#dinamica div h1 {
+    color: #047835;
+    font-size: 75px;
+}
+
+#dinamica div ul li {
+    word-break: normal !important;
+    list-style-type: none;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #838383;
+}
+
+#dinamica div ul li img {
+    width: 26px;
+    margin-right: 20px;
+}
+
+.footerbootellas img {
+    width: 800px;
+    max-width: 90%;
+}
+
+.corazonnica {
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    max-width: 90%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.corazonnica img {
+    position: relative;
+    width: 800px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.redes a img {
+    margin: 10px;
+    width: 30px !important;
+}
+
+.videoinstrucciones iframe {
+    width: 480px;
+    height: 315;
+    max-width: 100%;
+}
+
+.instrucciones ul {
+    margin-left: -35px;
+}
+
+.navbar-toggler {
+    border: #f5c00a 5px solid;
+}
+/*************************** LOGIN Y REGISTRO *******************************/
+
+.viewport {
+    width: 100%;
+    height: -moz-calc(100% - 150px);
+    /* Firefox */
+    height: -webkit-calc(100% - 150px);
+    /* Chrome, Safari */
+    height: calc(100% - 150px);
+    /* IE9+ and future browsers */
+    padding-top: 40px;
+}
+
+.viewportregistro {
+    width: 100%;
+    min-height: 80%;
+    padding-top: 40px;
+}
+
+#imgregistro {
+    width: 500px;
+    max-width: 100%;
+}
+
+#formregistro {
+    width: 600px;
+    background: url('../../../media/login/bglogin.jpg');
+    background-position: center center;
+    border-radius: 15px;
+    border: solid 3px #eaba15
+}
+
+#formregistro h1 {
+    color: #047835;
+    font-size: 72px;
+}
+
+#flogin {
+    color: #047835;
+    font-size: 22px;
+}
+
+#personForm .btn {
+    width: 100%;
+    background: #047835;
+    color: #fff;
+    font-size: 22px;
+}
+
+#flogin .btn {
+    width: 100%;
+    background: #047835;
+    color: #fff;
+    font-size: 22px;
+}
+
+#btnforms {
+    width: 100%;
+    background: #047835;
+    color: #fff;
+    font-size: 22px;
+}
+
+#btncancelar {
+    width: 100%;
+    border: 4px solid #047835;
+    color: #047835;
+    font-size: 22px;
+}
+
+#contenedordatos {
+    background: #009d00;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#btnregistrate {
+    display: block;
+    width: 100% !important;
+    border: solid 3px #047835;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #047835;
+    text-align: center;
+    font-size: 22px;
+}
+
+#alertverificacion img {
+    width: 100%
+}
+
+#dbonus {
+    width: 100%;
+    background: url('../../../media/home/bgbonus.jpg') !important;
+    padding-top: 20px;
+    background-size: 100% 100%;
+    box-shadow: 5px 5px 10px rgb(100, 100, 100);
+    padding-bottom:15px;
+}
+
+
+#dbonus h1 {
+    width: 300px;
+    text-align: center;
+    max-width: 90%;
+    color: #047835;
+    font-size: 50px;
+}
+#dbonus img {
+    position: relative;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    max-width: 90%;
+    color: #047835;
+    font-size: 50px;
+}
+
+#dbonus div p {
+    width: 500px;
+    max-width: 90%;
+    color: #047835;
+    font-size: 25px;
+    word-break: normal !important; 
+    position: relative;
+    margin: auto;
+}
+
+.cardspreview {
+    width: 150px;
+    max-width: 30%;
+    background: #fff;
+}
+
+.contenedortarjetas {
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#bggame {
+    background: url('../../../media/bgjuego.jpg') no-repeat;
+    background-size: cover;
+}
+
+.contanim {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*************************Dahboard**************************/
+
+#alertverificacion {
+    margin-bottom: 30px;
+}
+
+#alertverificacion img {
+    width: 100%
+}
+
+#infouser h1 {
+    color: #fff;
+}
+
+#infouser img {
+    position: relative;
+    width: 100%
+}
+
+#infopartidas span {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.redespartidas a img {
+    width: 115px !important;
+    height: 45px;
+}
+
+#btnpartida {
+    width: 200px !important;
+    max-width: 35% !important;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.pagination li a {
+    color: #047835;
+}
+
+
+@media (max-width: 600px) {
+    #dbonus{
+       border:10px solid #cbe880 ;
+       background: #fff !important;
+
+    }
+
+    #dbonus img {
+        position: relative;
+        margin: auto;
+        margin-top: 20px;
+        width: 300px;
+        text-align: center;
+        max-width: 90%;
+        color: #047835;
+        font-size: 50px;
+    }
+    
+    #dbonus div p {
+        width: 500px;
+        max-width: 90%;
+        color: #047835;
+        font-size: 25px;
+        word-break: normal !important; 
+        position: relative;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .btnuser {
+        width: 90% !important;
+    }
+    #dpremios div h1 {
+        width: 100%;
+    }
+    .game-bg {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    #btnpartida {
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+    #infouser img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .viewport {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #formregistro h1 {
+        color: #047835;
+        font-size: 40px;
+    }
+    .navbar-toggler {
+        text-align: center;
+    }
+    #dinamica div h1 {
+        color: #047835;
+        font-size: 50px;
+    }
+    .footerbootellas img {
+        background-image: url('../../../media/home/botellasfoote_mr.png')';
+
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .viewport {
+        width: 100%;
+        height: auto;
+    }
+    #dinamica div h1 {
+        color: #047835;
+        font-size: 50px;
+    }
+    .footerbootellas img {
+        background-image: url('../../../media/home/botellasfoote_mr.png')';
+
+    }
+}

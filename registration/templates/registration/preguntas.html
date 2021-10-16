@@ -1,0 +1,475 @@
+{% extends "registration/base.html" %} {% block content %}
+<div class="viewportregistro text-center">
+    <style>
+        .btn-link {
+            font-size: 25px;
+            color: #009414
+        }
+
+        .card-body {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+            text-align: justify;
+        }
+
+        .accordion>.card>.card-header {
+            border-radius: 0;
+            margin-bottom: -1px;
+            text-align: left;
+        }
+    </style>
+    <h1 style="font-size:35px;color:#009414">PREGUNTAS FRECUENTES </h1>
+    <br />
+    <div class="container py-3" style="font-size: 20px;">
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <div class="accordion" id="faqExample">
+                    <div class="card">
+                        <div class="card-header p-2" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿De qué se trata la Chalupa Toña?
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#faqExample">
+                            <div class="card-body">
+                                Creamos La Chalupa Toña como nuestro tributo a Nicaragua. Lanzamos una edición especial
+                                de nuestra lata 350 mL y botella 350 mL para que colecciones y ganes. Son 18 diseños
+                                creados especialmente para todos los nicas de corazón. <br />
+                                Coleccionalos, juega la chalupa y participa para ganar producto promocional, muuucho
+                                líquido gratis y para participar por 1 VIAJE TODO PAGADO PARA TI Y 2 ACOMPAÑANTES por
+                                toda Nicaragua, cortesía de Cerveza Toña.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Cómo participo en la Chalupa Toña?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                            <div class="card-body">
+                                Válido para todos los consumidores con cédula de identidad nicaragüense, mayores de
+                                dieciocho (18) años de edad.
+                                <br />
+                                Para participar, deberás coleccionar los 18 diseños de botellas y latas de edición
+                                especial y asegurarte de tener 1 de cada diseño. Luego, ingresar a WWW.CHALUPATONA.COM
+                                para registrarte y jugar hasta ganar. </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Qué hago para jugar la Chalupa Toña?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#faqExample">
+                            <div class="card-body">
+                                Ingresa a WWW.CHALUPATONA.COM y completa tus datos. <br />
+
+                                Sube una fotografía tuya acompañado de tu colección completa con los 18 diseños, para
+                                poder registrarte.
+                                <br />
+                                Y listo, ¡a jugar en línea se ha dicho!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Quiénes pueden participar?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#faqExample">
+                            <div class="card-body">
+                                Participan todos los consumidores de cerveza con cédula de identidad nicaragüense,
+                                mayores de dieciocho (18) años de edad.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header p-2" id="h4">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c4" aria-expanded="false" aria-controls="c4">
+                                    ¿Cuántas veces puedo jugar al día?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c4" class="collapse" aria-labelledby="h4" data-parent="#faqExample">
+                            <div class="card-body">
+                                Tendrás 4 oportunidades cada día para jugar y ganar. Puedes volver a jugar todos los
+                                días que quieras, mientras esté vigente la campaña y dinámica promocional.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header p-2" id="h5">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c5" aria-expanded="false" aria-controls="c5">
+                                    ¿Cómo tiene que ser mi foto con las botellas y latas de Chalupa Toña?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c5" class="collapse" aria-labelledby="h5" data-parent="#faqExample">
+                            <div class="card-body">
+                                Para que tu foto sea válida y puedas jugar la Chalupa Toña en línea, tu fotografía
+                                deberá cumplir con ciertos requisitos y condiciones que nos permitan verificar tu
+                                colección:
+                                <br />
+                                <br />
+                                • El propietario del perfil a crearse debe aparecer en la fotografía con la colección
+                                completa de LA CHALUPA TOÑA.
+
+                                <br />
+                                • El propietario del perfil a crearse debe ser mayor de dieciocho (18) años de edad.
+
+                                <br />
+                                • La fotografía debe incluir los 9 diseños de botella desechable y 9 diseños de lata de
+                                LA CHALUPA TOÑA.
+
+                                <br />
+                                • La fotografía debe incluir cada diseño, no puede incluir diseños repetidos por
+                                presentación de producto (botella y lata)
+
+                                <br />
+                                • La fotografía no debe incluir personas consumiendo el producto.
+
+                                <br />
+                                • La fotografía solo debe incluir a una persona (Persona propietaria del perfil a
+                                crearse).
+
+                                <br />
+                                • La fotografía será única y corresponderá al perfil de usuario a crearse en el sitio
+                                web www.chalupatona.com. (Esta fotografía será inválida en la creación de un nuevo
+                                perfil de usuario).
+
+                                <br />
+                                • La fotografía debe tener enfoque e iluminación (La fotografía no se debe ver borrosa).
+
+                                <br />
+                                • El producto puede estar sellado o vacío.
+
+                                <br />
+                                • La fotografía debe incluir únicamente lo listado en el reglamento para ser verificada.
+
+                                <br />
+                                • Si la fotografía incluye el uso de imágenes y/o elementos inapropiados, como faltas a
+                                la moral o uso indebido de símbolos patrios, será causante de bloqueo y reporte a las
+                                autoridades pertinentes
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header p-2" id="h6">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c6" aria-expanded="false" aria-controls="c6">
+                                    ¿Cuáles son las fechas para participar? 
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c6" class="collapse" aria-labelledby="h6" data-parent="#faqExample">
+                            <div class="card-body">
+                                Podrás jugar la Chalupa Toña en línea desde el 24 de noviembre de 2020 hasta el 14 de
+                                febrero de 2021.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header p-2" id="h7">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c7" aria-expanded="false" aria-controls="c7">
+                                    ¿Cuáles son los personajes de La Chalupa Toña?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c7" class="collapse" aria-labelledby="h7" data-parent="#faqExample">
+                            <div class="card-body">
+                                El juego en nuestro sitio web está compuesto por personajes inspirados en la cultura
+                                nicaragüense: en sus tradiciones, sus comidas típicas, su abundante fauna, su flora y su
+                                geografía única. 
+                                <br />
+                                Te invitamos a coleccionar tus 18 empaques y a participar en el juego en línea, para
+                                conocerlos todos y tener la oportunidad de ganar uno de los juegos de mesa
+                                coleccionables de nuestra Chalupa Toña, producto promocional, MUUUCHO LÍQUIDO GRATIS y
+                                el premio de la Gran Cantada de la Chalupa Toña:
+                                1 VIAJE CON GASTOS PAGADOS* para ti y 2 acompañantes por toda Nicaragua.
+                                <br />
+                                *Restricciones aplican. Para más información de la Chalupa Toña, consulta el Reglamento
+                                completo en <a target="_blank" href="https://chalupatona.com/media/REGLAMENTO_CHALUPA_TONA_2020.pdf">WWW.CHALUPATONA.COM/REGLAMENTO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header p-2" id="h8">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c8" aria-expanded="false" aria-controls="c8">
+                                    ¿Qué presentaciones participan?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c8" class="collapse" aria-labelledby="h8" data-parent="#faqExample">
+                            <div class="card-body">
+                                Participan todas tus latas y botellas desechables de 350 mL de la marca Cerveza Toña,
+                                edición Chalupa Toña.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h9">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c9" aria-expanded="false" aria-controls="c9">
+                                    ¿Donde puedo comprar mis latas y botellas de edición especial Chalupa Toña?  
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c9" class="collapse" aria-labelledby="h9" data-parent="#faqExample">
+                            <div class="card-body">
+                                En todos los establecimientos que comercialicen las latas y botellas desechables de 350 mL de la marca Cerveza Toña edición Chalupa Toña, dentro del territorio nacional.  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h10">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c10" aria-expanded="false" aria-controls="c10">
+                                    ¿Cuáles son los puntos de venta participantes?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c10" class="collapse" aria-labelledby="h10" data-parent="#faqExample">
+                            <div class="card-body">
+                                • Pulperías 
+                                <br/>
+                                • Misceláneas 
+                                <br/>
+                                • Licorerías 
+                                <br/>
+                                • Gasolineras 
+                                <br/>
+                                • Kiosco/Casetas 
+                                <br/>
+                                • Tiendas de conveniencia 
+                                <br/>
+                                • Supermercados  
+                                <br/>
+                                • Minisúpers 
+                                <br/>
+                                • Bares 
+                                <br/>
+                                • Restaurantes 
+                                <br/>
+                                • Distribuidores 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h11">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c11" aria-expanded="false" aria-controls="c11">
+                                    ¿Cuáles son los premios del juego en línea? 
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c11" class="collapse" aria-labelledby="h11" data-parent="#faqExample">
+                            <div class="card-body">
+                                Cada día se sortearán aleatoriamente: camisetas, gorras, LÍQUIDO GRATIS y también tu propio Juego de Mesa ChalupaToña. 
+                                <br/>
+                                ¡Juega todas las veces que puedas!   <br/>
+                                Cada vez que juegas una cantada de Chalupa Toña en línea, acumulas acciones. Estas acciones te podrían llevar a formar parte de la Gran Cantada de la Chalupa Toña, en febrero de 2021, para ganar 1 VIAJE CON GASTOS PAGADOS* para ti y 2 acompañantes por toda Nicaragua.  
+                                <br/>
+                                Además de grandes dotaciones de Cerveza Toña.*
+                                <a target="_blank" href="https://chalupatona.com/media/REGLAMENTO_CHALUPA_TONA_2020.pdf">WWW.CHALUPATONA.COM/REGLAMENTO </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h12">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c12" aria-expanded="false" aria-controls="c12">
+                                    ¿Cómo puedo reclamar mi premio?  
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c12" class="collapse" aria-labelledby="h12" data-parent="#faqExample">
+                            <div class="card-body">
+                                Los premios de promocionales y/o líquido gratis podrán ser canjeados exclusivamente en tiendas seleccionadas de Super Express, AMPM o distribuidores autorizados de Compañía Cervecera de Nicaragua.  
+                                <br/>
+                                Si eres uno de los ganadores, recibirás un correo que te indicará cómo canjear tu premio y te permitirá seleccionar la ubicación más próxima en la que podrás canjear tu premio. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h13">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c13" aria-expanded="false" aria-controls="c13">
+                                    ¿Hasta cuándo puedo reclamar mi premio?    
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c13" class="collapse" aria-labelledby="h13" data-parent="#faqExample">
+                            <div class="card-body">
+                                La fecha máxima para canjear los premios finaliza el día veintiocho (28) de febrero del año 2021, o mientras duren existencias. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h14">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c14" aria-expanded="false" aria-controls="c14">
+                                    ¿Donde puedo obtener más información?     
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c14" class="collapse" aria-labelledby="h14" data-parent="#faqExample">
+                            <div class="card-body">
+                                Para más información de la Chalupa Toña, consulta el Reglamento completo en <a target="_blank" href="https://chalupatona.com/media/REGLAMENTO_CHALUPA_TONA_2020.pdf">WWW.CHALUPATONA.COM/REGLAMENTO </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h15">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c15" aria-expanded="false" aria-controls="c15">
+                                    ¿Y si no gano nada en el juego en línea?   
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c15" class="collapse" aria-labelledby="h15" data-parent="#faqExample">
+                            <div class="card-body">
+                                ¡Sigue jugando todas las veces que puedas!  <br/><br/>
+                                Cada vez que juegas una cantada de Chalupa Toña en línea, acumulas acciones. Estas acciones te podrían llevar a formar parte de la Gran Cantada de la Chalupa Toña, en febrero de 2021. 
+                                <br/>
+                                Los jugadores seleccionados para participar en la gran cantada, podrán ganar 1 VIAJE CON GASTOS PAGADOS para ti + 2 acompañantes por toda Nicaragua*. Además de grandes dotaciones de Cerveza Toña.* 
+                                
+                                <br/>
+                                
+                                *Restricciones aplican. Para más información de la Chalupa Toña, consulta el Reglamento completo en <a target="_blank" href="https://chalupatona.com/media/REGLAMENTO_CHALUPA_TONA_2020.pdf">WWW.CHALUPATONA.COM/REGLAMENTO </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h19">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c19" aria-expanded="false" aria-controls="c19">
+                                    ¿Qué es la Gran Cantada de la Chalupa Toña?     
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c19" class="collapse" aria-labelledby="h19" data-parent="#faqExample">
+                            <div class="card-body">
+                                ¡Queremos dejar la huella del orgullo nica en todos nuestros ganadores! Por eso cada vez que juegas la Chalupa Toña en la web, obtienes acciones digitales que servirán para participar en el sorteo de 3 premios especiales en la Gran Cantada de la Chalupa Toña. Esta será transmitida el 26 de febrero de 2021.  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h16">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c16" aria-expanded="false" aria-controls="c16">
+                                    ¿Cómo puedo participar en la Gran Cantada de la Chalupa Toña?      
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c16" class="collapse" aria-labelledby="h16" data-parent="#faqExample">
+                            <div class="card-body">
+                                ¡Jugando en línea todas las veces que puedas!  <br/> <br/>
+Cada vez que juegas una cantada de Chalupa Toña en línea, acumulas acciones. Para elegir a los participantes de la Gran Cantada de la Chalupa Toña, sortearemos 3 puestos entre todas estas acciones. 
+<br/>
+Los jugadores seleccionados para participar en la gran cantada final, podrán ganar 1 VIAJE CON GASTOS PAGADOS para ti + 2 acompañantes por toda Nicaragua*. Además de grandes dotaciones de Cerveza Toña.* 
+<br/>
+*Restricciones aplican. Para más información de la Chalupa Toña, consulta el Reglamento completo en <a target="_blank" href="https://chalupatona.com/media/REGLAMENTO_CHALUPA_TONA_2020.pdf">WWW.CHALUPATONA.COM/REGLAMENTO </a> 
+
+ 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-2" id="h17">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c17" aria-expanded="false" aria-controls="c17">
+                                    ¿Qué son las acciones para la Gran Cantada de la Chalupa Toña?     
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c17" class="collapse" aria-labelledby="h17" data-parent="#faqExample">
+                            <div class="card-body">
+                                Cada vez que juegas una cantada de Chalupa Toña en línea, acumulas acciones. 
+
+ <br/>
+
+¡Juega y acumula todas las que puedas! Estas serán tu manera de participar en el sorteo para asistir a la Gran Cantada de la Chalupa Toña y ganar cualquiera de los 3 grandes premios, cortesía de Cerveza Toña.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header p-2" id="h20">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#c20" aria-expanded="false" aria-controls="c20">
+                                    ¿Cuántos premios se sortearan en la Gran Cantada de la Chalupa?    
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="c20" class="collapse" aria-labelledby="h20" data-parent="#faqExample">
+                            <div class="card-body">
+                                Se eligiran aleatoriamente 3 ganadores. </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--/row-->
+    </div>
+    <!--container-->
+    <a target="_blank" href="https://www.facebook.com/messages/t/cervezatona"><img src="../.././../media/fbm.png"
+            style="width:300px !important"></a>
+
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,64 @@
+
+{% extends "registration/baseadmin.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<div style="width: 100%; text-align: center;">
+    <div class="col-md-12">
+        <h1>Listado de Ganadores: </h1>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div>
+        <a href="{% url 'inicio-tombola' %}" class="btn btn-lg btn-outline-info">Regresar</a>
+        
+      </div>
+    </div>
+    
+    <br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <table class="table table-hover" id="table_id">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Departamento</th>
+                    <th scope="col">Municipio</th>
+                    <th scope="col">Fecha de Ingreso</th>
+                    
+                  </tr>
+                </tbody>
+                <tbody>
+                  {% for usuario in usuarios %}
+                    <tr>
+                        <th>{{ usuario.user.pk }}</th>  
+                        <th>{{ usuario.user.first_name }}</th>
+                        <th><img class="rounded-circle account-img" src="{{ usuario.image.url }}"></th>
+                        <th>{{ usuario.DNI}}</th>                    
+                        <th>{{ usuario.birthday}}</th>
+                        <th>{{ usuario.telephone}}</th> 
+                        <th>{{ usuario.country.name}}</th>
+                        <th>{{ usuario.city.name}}</th>
+                        <th>{{ usuario.user.date_joined }}</th>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+        </div>
+        
+    </div>
+  </div>  
+    
+   <script>
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+   </script>
+    
+{% endblock content %}

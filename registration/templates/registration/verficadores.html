@@ -1,0 +1,22 @@
+{% extends "registration/baseadmin.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+    <div class="col-md-12">
+        <h1>Verifcadores</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+        <a href="{% url 'verficar-list' pk=0 %}" class="btn btn-lg btn-outline-danger">No Verificados</a>
+        <a href="{% url 'verficar-list' pk=1 %}" class="btn btn-lg btn-outline-info">Verificados</a>
+      </div>
+    </div>
+    
+    
+    
+    
+   
+    
+{% endblock content %}

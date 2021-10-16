@@ -1,0 +1,266 @@
+{% load static %} {% load bootstrap4 %} {# import bootstrap4/bootstrap3 #} {% bootstrap_css %} {# Embed Bootstrap CSS #} {% bootstrap_javascript jquery='full' %} {# Embed Bootstrap JS+jQuery #}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N247FSR');</script>
+    <!-- End Google Tag Manager -->
+<script src="../../../registration/static/registration/smooth-scroll-window.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/cookit.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/style.css' %}"> 
+    {% block head %}{% endblock %}
+    <link rel="icon" type="image/png" href="../../../media/home/favicon.png">
+     {% if title %}
+    <title>CHALUPA TOÑA - {{ title }}</title>
+    {% else %}
+    <title>CHALUPA TOÑA</title>
+    {% endif %} {% block script %}{% endblock %}
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N247FSR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <style>
+ 
+        body,html{
+            overflow-x: hidden;
+        }
+
+        #cookit-link {
+            display: none !important;
+
+        }
+        #cookit{
+            background-color: #ffffff !important;
+            color:#167f19 !important;
+
+        }
+        #cookit-message{
+            color:#167f19 !important;
+            font-size:22px !important;
+        }
+
+        #cookit-button{
+            color:#fff !important;
+            background-color:#167f19 !important;
+            font-size:22px !important;
+        }
+        .carousel-caption{
+           bottom: 50% !important;
+        }
+        #btns{
+            width:300px;
+            text-align: center;
+            
+        }
+
+        .close{
+        font-size: 60px;
+    }
+        @media (max-width: 600px) {
+            .carousel-caption{
+           bottom: 20% !important;
+        }
+        #carouselprincipal{
+            margin-top:30px;
+        }
+        #btns{
+            width:150px;
+            text-align: center;
+        }
+        }
+    </style>
+
+    <header class="site-header">
+        <nav class="navbar fixed-top navbar-expand-md" style="top:80px;">
+            <div class="container">
+                <a class="navbar-brand mr-4" #><img src="../../../media/home/logo_menu.png" width="145"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-auto">
+
+
+                    </div>
+                    <!-- Navbar Right Side -->
+                    <div class="navbar-nav">
+                        {% if user.is_authenticated %}
+                        <a class="nav-item nav-link" href="{% url 'oldgames' %}"><img src="../../../media/home/bullet_menu.png"> MIS JUEGOS</a>
+                        <a class="nav-item nav-link" href="/perfil"><img src="../../../media/home/bullet_menu.png"> MI PERFIL</a>
+                        <a class="nav-item nav-link" href="{% url 'logout' %}"><img src="../../../media/home/bullet_menu.png"> CERRAR SESIÓN</a>
+                        <a class="nav-item nav-link btnuser" href="{% url 'login' %}">JUEGA AHORA</a>
+                         {% else %}
+                        <a href="#dpremios" class="nav-item nav-link" href="{% url 'login' %}"><img src="../../../media/home/bullet_menu.png"> PREMIOS</a>
+                        <a href="#dinamica" class="nav-item nav-link" href="{% url 'login' %}"><img src="../../../media/home/bullet_menu.png"> DINÁMICA</a>
+                        <a href="#dbonus" class="nav-item nav-link" href="{% url 'login' %}"><img src="../../../media/home/bullet_menu.png"> BONUS</a>
+                        <a class="nav-item nav-link" target="_blank" href="https://chalupatona.com/media/REGLAMENTO_CHALUPA_TONA_2020.pdf"><img src="../../../media/home/bullet_verde.png"> REGLAMENTO</a>
+                        <a class="nav-item nav-link btnuser" href="{% url 'login' %}">JUEGA AHORA</a>
+                        <a class="nav-item nav-link btnuser " href="#"> REGÍSTRATE</a> {% endif %}
+                        <a class="nav-item nav-link"  href="/preguntas"><img src="../../../media/home/bullet_verde.png"> PREGUNTAS FRECUENTES</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        {% if messages %} {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+
+        {% endfor %} {% endif %}
+    </div>
+
+
+    {% block content %}{% endblock %}
+
+    <footer>
+
+
+        <div class="footerbootellas" >
+            <div class="improfooter">
+                <picture>
+                    <source srcset="../../../media/home/../../../media/home/impocratesmb.png" media="(max-width: 600px)">
+                    <img src="../../../media/home/impocrates.png" alt="El consumo de este producto es perjudicial para la salud">
+                </picture>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com/cervezatona" target=_blank><img src="../../../media/home/facebook.png" width="20"></a>
+                <a href="https://www.instagram.com/cervezatona/" target=_blank><img src="../../../media/home/instagram.png" width="20"></a>
+                <a href="https://twitter.com/cervezatona" target=_blank><img src="../../../media/home/twitter.png" width="20"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script >
+        (function($) {
+            $.cookit = function(options) {
+          
+              var settings = $.extend({
+                backgroundColor: '#1c1c1c',
+                messageColor: '#fff',
+                linkColor: '#fad04c',
+                buttonColor: '#fad04c',
+                messageText: "<b>Do you hungry ?</b> 🍪 Pursuing navigation on this site, you accept the use of cookies.",
+                linkText: "Learn more",
+                linkUrl: "https://www.cookiesandyou.com",
+                buttonText: "I accept",
+              }, options);
+              
+              const banner = $("<div id='cookit'></div>");
+              const container = $("<div id='cookit-container'></div>");
+              var message = link = button = null;
+              const hasCookieConsent = getCookie('cookies-consent');
+          
+              if (!hasCookieConsent) {
+                createBanner(settings);
+                $('#cookit-button').on('click', () => {
+                  const cookieBanner = $('#cookit');
+                  cookieBanner.addClass('hidden');
+                  setCookie('cookies-consent', 1, 365);
+                });
+              }
+          
+              function createBanner() {
+                message = $("<p id='cookit-message'>"+ settings.messageText +"</p>");
+                link = $("<a id='cookit-link' href='" + settings.linkUrl + "' target='_blank'>" + settings.linkText + "</a>");
+                button = $("<a id='cookit-button' href='#'>" + settings.buttonText + "</a>");
+              
+                $('body').append(banner);
+                banner.append(container);
+                container.append(message);
+                container.append(link);
+                container.append(button);
+          
+                customize();
+              }
+          
+              function customize() {
+                banner.css({'background-color': settings.backgroundColor});
+                message.css({'color': settings.messageColor});
+                link.css({'color': settings.linkColor});
+                button.css({
+                  'background-color': settings.buttonColor,
+                  'color': settings.backgroundColor
+                });
+              }
+              
+              function getCookie(name) {
+                const decodedCookie = decodeURIComponent(document.cookie);
+                const ca = decodedCookie.split(';');
+                name = name + "=";
+              
+                for(let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') {
+                      c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                      return c.substring(name.length, c.length);
+                    }
+                }
+              }
+              
+              function setCookie(name, value, days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days*24*60*60*1000));
+                const expires = "expires=" + date.toUTCString();
+                document.cookie = name + "=" + value + ";" + expires + ";path=/";
+              }
+          
+            };
+          })(jQuery);
+    </script>
+    <script >
+        $(document).ready(function() {
+            $(this).smoothScrollWindow();
+            $.cookit({
+  messageText: "Utilizamos cookies solo para recoger estadísticas de uso sin almacenar datos personales.",
+  linkText: "Política de cookies",
+  linkUrl: "#",
+  buttonText: "ACEPTO"
+});
+
+setTimeout(function(){
+    $('#cookit').hide();
+}, 30000);
+/*
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top-90
+                    }, 300, function() {
+
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });*/
+        });
+
+    </script>
+
+
+</body>
+
+</html>

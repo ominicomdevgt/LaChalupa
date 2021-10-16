@@ -1,0 +1,42 @@
+{% extends "registration/base.html" %} {% load crispy_forms_tags %} {% block content %}
+<style>
+    input {
+       font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<div class="viewportregistro">
+    <div class="col-12 text-center mb-5">
+        <img src="../../../media/login/ajugar.png" alt="A jugar se ha dicho - Chalupa Toña" style="width:700px;max-width:90%">
+    </div>
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <div class="content-section " id="formregistro">
+            {% if message is not None %}
+            <div class="alert alert-danger" role="alert">
+                {{ message }}
+            </div>
+            {% endif %}
+            <form id="flogin" action="" method="post">
+                {% csrf_token %}
+
+                <label for="username">Usuario<span class="asteriskField">*</span> </label>
+                <input type="text" name="username" class="textinput textInput form-control" id="username">
+
+                <label for="password">Contraseña<span class="asteriskField">*</span></label>
+                <input type="password" name="password" class="textinput textInput form-control" id="password">
+                <br/>
+                <div class="form-group">
+                    <button class="btn " type="submit">Juega ahora</button>
+                    <br/>
+                    <p class="text-center mt-2" style="font-size:18px; color:rgb(100, 100, 100);    ">
+                        <i><a href="/password-reset/" style="color:rgb(100, 100, 100);">Olvidaste tu Contraseña</a><i/>
+                    </small>
+                </div>
+            </form>
+            <div class="border-top pt-3">
+                <a id="btnregistrate" href="/user-registro" class="ml-2">Regístrate</a>
+            </div>
+        </div>
+        <img id="imgregistro" src="../../../media/login/login.png">
+    </div>
+</div>
+{% endblock content %}

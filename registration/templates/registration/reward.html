@@ -1,0 +1,24 @@
+{% extends "registration/baseadmin.html" %}
+{% load crispy_forms_tags %}
+{% block content %}  
+<div style="width: 100%;text-align: center;">
+    <h2>Validacion del Premio</h2>
+        <div class="media" style="width: 500px;max-width: 100%;">
+            <img class="rounded-circle account-img" src="{{ Game.reward.image.url }}">
+            <div class="media-body">
+            <h2 class="account-heading">{{Game.reward.type_reward}} {{Game.reward.gender}} {{Game.reward.size}}</h2>
+            <form action="" method="post">
+                {% csrf_token %}
+                <h3>Nombres: {{ Game.user.firt_name }} {{Game.user.last_name}}</h3>
+                <h3>Cedula: {{Game.user.profile.DNI}}</h3>
+                <h3>Fecha de Nacimiento: {{Game.user.profile.birthday}}</h3>
+                <br><br>
+                <a href="{% url 'home-page' %}" class="btn btn-outline-danger">Cancelar</a>
+                <button class="btn btn-outline-info" type="submit">Entregar Premio</button>
+            </form>
+            
+            </div>
+        </div>
+      <p style="width:100%:text-align:center;color:red;font-size:20px">Recuerde al consumidor que no hay cambio de premio.</p>
+    </div>
+{% endblock content %}

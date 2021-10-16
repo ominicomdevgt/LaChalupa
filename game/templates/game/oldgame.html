@@ -1,0 +1,49 @@
+{% extends "registration/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="viewportregistro" id="bggame">
+  
+  <div class="container d-flex flex-wrap justify-content-between align-items-center">
+    <div class="col-md-6 mb-2">
+      <div class="card" style=" border-radius: 15px;
+      border: solid 3px #eaba15">
+      <img class="card-img-top" src="{{ game.reward.image.url }}" alt="">
+        <div class="card-body">
+          <h4  style="color:rgb(121, 121, 121);"> {{ game.date  }}</h4>
+          {% if game.reward.type_reward is None  %}
+          <h3 class="card-title">Ganaste una Acción no canjeable. ACCIÓN: {{game.PID}} </h3>
+          {% else %}
+          <h3 class="card-title">Ganaste </h3>
+          <p class="card-text" style="color:rgb(126, 126, 126)24);font-size: 20px;">Premio: {{ game.reward.type_reward }} </p>
+          <form action="" method="post">{% csrf_token %} <button type="submit"  id="btnforms"  class="btn reward">Reenviar Correo del Premio</button> </form>
+          {% endif %}
+          <a href="#" id="btncancelar" class="btn">Regresar a mi historial</a>
+        
+        </div>
+      </div>
+    </div>
+    <div class="contenedortarjetas pb-5">
+        <div class="col-md-2"></div>
+        {% for data in dataset %}
+        
+            <img class="cardspreview" class="img-thumbnail"  src="{{ data.image.url }}"> 
+        
+        {% endfor %} 
+        </div>
+        <div class="row">
+   
+     
+          
+          
+       
+   
+      </div>
+       
+    </div>
+
+    
+    
+    
+</div>
+    
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% extends "registration/base.html" %} {% load crispy_forms_tags %} {% block content %}
+<style>
+    input {
+       font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<div class="viewportregistro">
+    <div class="container d-flex flex-wrap justify-content-center align-items-center">
+        <div class="content-section" id="formregistro">
+            <h1>INGRESA TUS DATOS</h1>
+            <form action="" method="post" enctype="multipart/form-data" id="personForm" >
+                {% csrf_token %}
+                <fieldset class="form-group" >
+                    {{ form|crispy }}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required='True'>
+                        <label class="form-check-label" for="defaultCheck1">
+                            Acepto todos los términos y condiciones sobre el uso de cookies en este sitio 
+                        </label>
+                      </div>
+                </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-outline-info" type="submit">Continua Registrándote</button>
+                </div>
+
+            </form>
+            
+        </div>
+        <img id="imgregistro" src="../../../media/registro/registro.png">
+    </div>
+
+</div>
+ 
+{% endblock content %}

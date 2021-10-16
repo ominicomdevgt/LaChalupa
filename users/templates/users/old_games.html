@@ -1,0 +1,74 @@
+{% extends "registration/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="viewportregistro" >
+  <div class="container">
+    <div class="content-section" style="
+      border-radius: 15px;
+      border: solid 3px #eaba15"
+      text-align:center>
+    <h1 style="color: #047835;text-align: center;font-size:50px">HISTORIAL DE CANTADAS</h1>
+    <p style="font-size: 30px;color:#1f1f1f;width:100%;text-align: center;margin-top: 15px;margin-bottom: 15px;">Recuerda que tus Acciones participan en el sorteo de ganadores de la gran cantada de la chalupa toña </p>
+ 
+        <div class="row">
+        {% for game in games %}
+       
+          <div class="col-sm-6 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <h4  style="color:rgb(121, 121, 121);">{{game.date}}</h4>
+                <h3 class="card-title">{% if game.won == True %}
+                  <h3 style="color: #047835;"">PARTIDA GANADA </h3>
+                  <p class="card-text" style="color:rgb(126, 126, 126)24);font-size: 20px;">Premio:
+                     {{game.reward.type_reward}} <br>
+                     Sucursal: {{game.store.name}} <br>
+                      {% if game.delivered == 1 %} 
+                     Estado: Por Entregar
+                     {% elif game.delivered == 2 %}
+                     Estado: Entregado
+                     {% endif %}
+                    </p>
+                    <h2>ACCIÓN {{game.PID}}</h2>
+                {% else %}
+                  ACCIÓN {{game.PID}}
+                {% endif %}</h3>
+                
+                {% if game.won == False %}
+           
+            {% else %}
+                
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          
+       
+        {% endfor %}
+      </div>
+      
+    
+    {% if games.has_other_pages %}
+    <ul class="pagination dflex flex-wrap justify-content-center">
+      {% if games.has_previous %}
+        <li class="page-link"><a href="?page={{ games.previous_page_number }}">&laquo;</a></li>
+      {% else %}
+        <li class="disabled page-link"><span>&laquo;</span></li>
+      {% endif %}
+      {% for i in games.paginator.page_range %}
+        {% if games.number == i %}
+          <li class="active page-link"><span>{{ i }} <span class="sr-only">(Actual)</span></span></li>
+        {% else %}
+          <li><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+        {% endif %}
+      {% endfor %}
+      {% if games.has_next %}
+        <li><a class="page-link" href="?page={{ games.next_page_number }}">&raquo;</a></li>
+      {% else %}
+        <li class="disabled page-link"><span>&raquo;</span></li>
+      {% endif %}
+    </ul>
+  {% endif %}
+  </div>
+  </div>
+  </div>
+{% endblock content %}

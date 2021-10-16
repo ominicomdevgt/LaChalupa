@@ -1,0 +1,175 @@
+.container-game {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.contain-lottery-cards {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.progress-contain {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 300px;
+    width: 100%;
+    border: solid 1px gray;
+    height: 25px;
+    border-radius: 8px;
+    background-color: gray;
+}
+
+.progress-indicator {
+    width: 0%;
+    height: 100%;
+    background-color: #EDAC03;
+    transition: width 3.8s;
+    border-radius: 8px;
+    border: none;
+}
+
+.list-group-item {
+    border: none !important;
+}
+
+.ul-lottery-cards {
+    position: relative;
+}
+
+.lottery-cards {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    background: none;
+}
+
+.lottery-items-container {
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.lottery-items {
+    width: 135px;
+    max-width: 30%;
+    position: relative;
+}
+
+.ficha {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.flower-card {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    margin: 0;
+    max-width: 100vw;
+    width: 500px;
+    z-index: 9;
+}
+
+.card-win {
+    opacity: 0;
+    transition: opacity 1s;
+    max-width: 100%;
+}
+
+.end-game {
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #047835;
+}
+
+.end-game-link {
+    text-decoration: none;
+    color: white;
+}
+
+.progress-contain {
+    width: 300px;
+}
+
+.vanimacion {
+
+    position: absolute;z-index:1;
+    width:100%;
+    height:80%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    
+}
+
+.close{
+    font-size:60px;
+}
+
+
+
+/* @media screen and (max-width: 1200px) {
+  .contain-lottery-cards {
+    max-height: 170px;
+  }
+
+  .progress-contain {
+    margin-top: 170px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contain-lottery-cards {
+    max-height: 100px;
+  }
+
+  .progress-contain {
+    margin-top: 100px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+    .contain-lottery-cards {
+        margin-top: -25px;
+        width: 100%;
+    }
+    .lottery-cards {
+        width: 45%;
+        top: calc(50% - 20px);
+        left: calc(50% - 90px);
+    }
+    .progress-contain {
+        margin-top: 170px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .progress-contain {
+        height: 15px;
+    }
+    .flower-card {
+        width: 250px;
+        top: calc(50% - 30px);
+        left: calc(50% - 120px);
+    }
+}
+
+#modal-partida {
+    display: flex;
+    opacity: 1;
+}

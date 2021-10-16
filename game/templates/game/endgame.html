@@ -1,0 +1,175 @@
+{% extends "registration/base.html" %}
+{% block content %}
+<style>
+  #map {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  #wrap-map {
+    height: 300px;
+    max-height: 500px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: static;
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+<script
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJD-dIa0YALY24HDWmgAwdl-aLR-c2OTM&callback=initMap"
+>
+</script>
+
+<div class="viewportregistro pb-5"  >
+  <div class="container d-flex flex-wrap justify-content-center align-items-center">
+   
+  <div class="col-md-8 col-sm-12" style="
+  border-radius: 15px;
+  border: solid 3px #eaba15;padding:30px;">
+
+    {% if won == True %}
+      {% if reward is not None %}
+      <h1 style="color: #047835;text-align: center;font-size:50px">¡ FELICIDADES GANASTE ! </h1><br/>
+      <div class="media">
+        
+      <p style="width:100%;text-align: center;"><img  src="{{ game.reward.image.url }}" style="width:300px;max-width:90%;position: relative;margin: 0 auto;"></p>
+     
+      
+      </div>
+      <div style="text-align: center !important;">
+        <p style="color: #000000;text-align: center;font-size:30px;color: #047835;">Has Ganado {{ reward.type_reward }}</p>
+          <p style="color:red; margin:0 auto;position:relative;text-align:center;width:90%;font-size:20px;">Es importante que selecciones la sucursal para poder recoger tu premio</p>
+          <p style="margin:0 auto;position:relative;text-align:center;width:90%;font-size:20px;">
+            puedes recoger tu premio en:  {{ game.user.profile.city }} <br/> o seleccionar una sucursal distinta: </p>
+          
+            <form action="" method="post" id="reward" >
+              {% csrf_token %}
+              <div class="form-group">
+                  <label for="store" style="font-size:20px">Sucursal</label>
+                  <select style="font-size:20px" name="store" id="store" class="custom-select" onchange="onChange()" >
+                      {% for store in Stores %}
+                          <option value="{{ store.pk }}">
+                              {{ store.name}}
+                          </option>
+                      {% endfor %} 
+                  </select>
+              </div>
+              {% if game.reward.type_reward == 'Gorra' or game.reward.type_reward == 'Camiseta' %}
+              <div class="form-group">
+                  <label style="font-size:20px" for="genero">Género</label>
+                  <select style="font-size:20px" class="custom-select" id="genero" name='genero'  required>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                  </select>
+                </div>
+                {% if game.reward.type_reward == 'Camiseta' %}
+                <div class="form-group">
+                  <label for="talla" style="font-size:20px">Talla</label>
+                  <select style="font-size:20px" class="custom-select" id="talla" name='talla' required>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                  </select>
+                </div>
+                {% endif %}
+              {% endif %}
+              <div id="wrap-map">
+                <div id="map"></div>
+              </div>
+              <br><br>
+              <a  class="btn reward" id="btnforms" >Confirmar y jugar de nuevo</a>
+        </form>
+        
+        
+      </div>
+      {% else %}
+      <h1 style="color: #047835;text-align: center;font-size:50px">Te ganaste una acción virtual para participar en el sorteo de la Gran Cantada Final.</h1><br/>
+      <div class="media">
+      <div class="media-body" style="text-align:center">
+        <h2 class="account-heading"><img src="../../../media/home/Ticketfinal.png" width="150"><span> ACCIÓN No. {{ game.PID }}</span></h2>
+        <p style="margin:0 auto;position:relative;text-align:center;width90%;font-size:25px;">Tienes una acción para participar en el sorteo de los ganadores de la Gran Cantada de la Chalupa Toña.</p>
+        
+      </div>
+      {% endif %}
+      
+    </div>
+    {% else %}
+    <h1 style="color: #047835;text-align: center;font-size:50px">ESTA VEZ NO TUVISTE SUERTE <br/> PERO GANASTE UNA ACCIÓN</h1>
+    <h2 style="color: #000000;text-align: center;font-size:50px"><img src="../../../media/home/Ticketfinal.png" width="150"><span> ACCIÓN No. {{ game.PID }}</span></h2>
+    <p style="margin:0 auto;position:relative;text-align:center;width90%;font-size:35px;">Tienes una acción para participar en el sorteo de los ganadores de la Gran Cantada de la Chalupa Toña.</p>
+    <div class="text-center">
+      <a href="/inicio" id="btnforms" class="btn">Confirmar y jugar de nuevo</a>
+      
+    </div>
+    {% endif %}
+    
+    
+  </div>
+  
+</div>
+</div>
+<script>
+  const store = JSON.parse("{{store_json|escapejs}}");
+  let center = { lat: store[0].latitud, lng: store[0].longitud };
+
+  function initMap() {
+    const locations = store.map((e) => ({ lat: e.latitud, lng: e.longitud, label: e.nombre }));
+    const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 16,
+    center,
+  });
+  // Create an array of alphabetical characters used to label the markers.
+  const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  // Add some markers to the map.
+  // Note: The code uses the JavaScript Array.prototype.map() method to
+  // create an array of markers based on a given "locations" array.
+  // The map() method here has nothing to do with the Google Maps API.
+  const markers = locations.map((location, i) => {
+    const loc = { lat: location.lat, lng: location.lng };
+    return new google.maps.Marker({
+      position: loc,
+      label: location.label,
+    });
+  });
+  // Add a marker clusterer to manage the markers.
+  new MarkerClusterer(map, markers, {
+    imagePath:
+      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+  });
+  }
+
+  function onChange() {
+    const select = document.getElementById("store");
+    const newCoordinates = store.find((e) => e.id === Number(select.value));
+    center = { lat: newCoordinates.latitud, lng: newCoordinates.longitud };
+    initMap();
+  }
+
+</script>
+<script>
+  $( document ).ready(function() {
+    $('.reward').click(function(){
+      event.preventDefault();
+      Swal.fire({
+  title: 'TE ENVIAMOS UN CORREO ELECTRÓNICO CON LA INFORMACIÓN DE TU PREMIO',
+  text: "",
+  icon: 'success',
+  showCancelButton: false,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Confirmar y jugar de nuevo'
+}).then((result) => {
+  if (result.isConfirmed) {
+    $('#reward').submit();
+  }
+})
+    });
+});
+</script>
+
+{% endblock content %}

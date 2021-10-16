@@ -1,0 +1,437 @@
+{% extends "registration/base.html" %} {% load static %} {% load crispy_forms_tags %} {% block head %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> {% endblock head %} {% block content %}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<audio id="welcome-sound" src="{{ '/media/sonidosextras/preparate.mp3' }}"></audio>
+<audio id="win-sound" src="{{ '/media/sonidosextras/partidaganada.mp3' }}"></audio>
+<audio id="lost-sound" src="{{ '/media/sonidosextras/12-IntentaloDeNuevo.mp3' }}"></audio>
+<audio id="yes-sound" src="{{ '/media/sonidosextras/4-Siiiii.mp3' }}"></audio>
+<audio id="1-yes-sound" src="{{ '/media/sonidosextras/5-Buenaaa.mp3' }}"></audio>
+<audio id="not-sound" src="{{ '/media/sonidosextras/7-NoEstaaa.mp3' }}"></audio>
+<audio id="1-not-sound" src="{{ '/media/sonidosextras/6-NiModo.mp3' }}"></audio>
+<audio id="2-not-sound" src="{{ '/media/sonidosextras/15-ALAAAA.mp3' }}"></audio>
+
+<style>
+    .container-game {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    text-align: center;
+}
+    
+    .contain-lottery-cards {
+        width: 500px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .progress-contain {
+        margin: 0 auto;
+        position: relative;
+        margin-top: 300px;
+        width: 100%;
+        border: solid 1px gray;
+        height: 25px;
+        border-radius: 8px;
+        background-color: gray;
+    }
+    
+    .progress-indicator {
+        width: 0%;
+        height: 100%;
+        background-color: #EDAC03;
+        transition: width 3.8s;
+        border-radius: 8px;
+        border: none;
+    }
+    
+    .list-group-item {
+        border: none !important;
+    }
+    
+    .ul-lottery-cards {
+        position: relative;
+    }
+    
+    .lottery-cards {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        background: none;
+    }
+    
+    .lottery-items-container {
+        width: 500px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .lottery-items {
+        width: 135px;
+        max-width: 30%;
+        position: relative;
+    }
+    
+    .ficha {
+        position: absolute;
+        top: calc(50% - 40px);
+        left: calc(50% - 40px);
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    
+    .flower-card {
+        position: absolute;
+        top: -30px;
+        left: 0px;
+        margin: 0;
+        max-width: 100vw;
+        width: 500px;
+        z-index: 9;
+    }
+    
+    .card-win {
+        opacity: 0;
+        transition: opacity 1s;
+        max-width: 100%;
+    }
+    
+    .end-game {
+        border-radius: 4px;
+        margin-top: 10px;
+        padding: 5px 0;
+        text-align: center;
+        background-color: #047835;
+    }
+    
+    .end-game-link {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .progress-contain {
+        width: 300px;
+    }
+    
+    .vanimacion {
+    
+        position: absolute;z-index:1;
+        width:100%;
+        height:80%;
+        background: rgba(0,0,0,0.7);
+        opacity: 0;
+        transition: opacity 1s ease-in;
+        
+    }
+    
+    .close{
+        font-size:60px;
+    }
+    
+    
+    
+    /* @media screen and (max-width: 1200px) {
+      .contain-lottery-cards {
+        max-height: 170px;
+      }
+    
+      .progress-contain {
+        margin-top: 170px;
+      }
+    }
+    
+    @media screen and (max-width: 1000px) {
+      .contain-lottery-cards {
+        max-height: 100px;
+      }
+    
+      .progress-contain {
+        margin-top: 100px;
+      }
+    } */
+    
+    @media screen and (max-width: 768px) {
+        .contain-lottery-cards {
+            margin-top: -25px;
+            width: 100%;
+        }
+        .lottery-cards {
+            width: 45%;
+            top: calc(50% - 20px);
+            left: calc(50% - 90px);
+        }
+        .progress-contain {
+            margin-top: 170px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        .progress-contain {
+            height: 15px;
+        }
+        .flower-card {
+            width: 250px;
+            top: calc(50% - 30px);
+            left: calc(50% - 120px);
+        }
+    }
+    
+    #modal-partida {
+        display: flex;
+        opacity: 1;
+    }
+</style>
+<div class="viewportregistro " id="bggame">
+
+ 
+    
+    <div class="container d-flex flex-wrap justify-content-center align-items-center">
+
+        <div class="contain-lottery-cards">
+            <ul class="list-group ul-lottery-cards">
+                {% for card in cards %}
+                <li class="animate__bounceIn list-group-item d-none lottery-cards {{ card.id }}Card">
+                    <audio src="{{ card.sound }}"></audio>
+                    <img class="img-thumbnail" src="{{ card.image.url }}" />
+                </li>
+                {% endfor %}
+                <li class="list-group-item bg-transparent border-0 flower-card">
+                    <img class=" card-win" src="{{ '/media/game_static/floresok.png' }}" />
+                </li>
+            </ul>
+            <div class="progress-contain"></div>
+
+        </div>
+
+
+
+        <div class="lottery-items-container">
+            {% for data in dataset %}
+            <div class="lottery-items">
+                <img id="ficha{{ data.id }}Card" class="ficha" src="{{ '/media/game_static/ficha.png' }}" />
+                <img class="img-thumbnail" src="{{ data.image.url }}" />
+            </div>
+            {% endfor %}
+        </div>
+        <div class="end-game" style="z-index:9;margin-bottom: 30px;">
+            <a id="btnforms" style="display: block;width:300px;max-width: 90%;z-index:99999999 !important;cursor:pointer"  onclick="endgame()">Terminar la Cantada</a>
+        </div>
+
+        <div class="cancel-game" style="margin-top:20px;width:600px;max-width:100%;background:#fff;padding:30px;box-shadow:0px 0px 5px rgb(104, 104, 104);z-index:9;margin-bottom: 30px;border-radius: 10px;display:none">
+            <p style="width: 100%;text-align:center;font-size: 20px; color:rgb(185, 0, 0)">¡CUIDADO! Si abandonas, perderás la oportunidad de ganar esta cantada con Chalupa Toña</p>
+            <a  href="/endgame/0" id="endgame-ok" style="border:3px solid #00850b ;text-align:center;margin:20px;display:block;background:#ffffff ;font-size:20px;color:rgb(0, 107, 36);width:100%;max-width: 90%;z-index:99999999 !important;cursor:pointer" >Terminar la Cantada</a>
+            <a onclick="terminar()" id="endgame-cancel" style="text-align:center;margin:20px;display:block;background:#00850b ;font-size:20px;color:#fff;width:100%;max-width: 90%;z-index:99999999 !important;cursor:pointer" >Seguir Jugando</a>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    'use strict';
+    const dash_json = JSON.parse("{{dash_json|escapejs}}");
+    const cards_json = JSON.parse("{{cards_json|escapejs}}");
+    const is_won = JSON.parse("{{is_won_json|escapejs}}");
+    let countIsWon = 0;
+
+    const getLastWord = (sentence) => {
+        const word = sentence.split(" ");
+        if (!word[word.length - 1].includes('Card')) {
+            return word[word.length - 2];
+        }
+        return word[word.length - 1];
+    };
+    let hasSound = true;
+
+    window.addEventListener('load', async () => {
+        const TIME = 4000;
+        let cards = 0;
+        let isReady = false
+
+        const lotteryCards = document.getElementsByClassName('lottery-cards');
+        const flowerCard = document.querySelector('.card-win');
+        const vanimacionFirst = document.querySelector('body');
+
+        const welcomeSound = document.getElementById('welcome-sound');
+        const winSound = document.getElementById('win-sound');
+        const lostSound = document.getElementById('lost-sound');
+        const yesSound = document.getElementById('yes-sound');
+        const oneYesSound = document.getElementById('1-yes-sound');
+        const notSound = document.getElementById('not-sound');
+        const oneNotSound = document.getElementById('1-not-sound');
+        const twoNotSound = document.getElementById('2-not-sound');
+        const startGame = document.querySelector('#btn-start');
+        const modalStart = document.querySelector('#modal-partida');
+
+        Swal.fire({
+            customClass: {
+                confirmButton: 'btn btn-warning btn-lg',
+                cancelButton: 'btn btn-danger btn-lg'
+            },
+            buttonsStyling: false,
+            imageUrl: '../../../media/participaparaganar/p0.jpg',
+            imageWidth: 500,
+            html: `
+                <button id="btn-sound" type="button" class="btn btn-danger btn-lg p-1" data-dismiss="modal" style="width: 30% !important;height:40px;" onclick="onfunc()">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-volume-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.717 3.55A.5.5 0 0 1 9 4v8a.5.5 0 0 1-.812.39L5.825 10.5H3.5A.5.5 0 0 1 3 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                        <path d="M10.707 11.182A4.486 4.486 0 0 0 12.025 8a4.486 4.486 0 0 0-1.318-3.182L10 5.525A3.489 3.489 0 0 1 11.025 8c0 .966-.392 1.841-1.025 2.475l.707.707z"/>
+                    </svg>
+                </button>
+            `,
+            imageAlt: 'PARTICIPA POR EL PREMIO',
+            confirmButtonText: 'INICIAR CANTADA',
+            }).then((result)  => {
+            if (!isReady) {
+                isReady = true;
+
+                if (hasSound) {
+                    welcomeSound.play();
+                }
+
+                setTimeout(() => {
+                    Swal.fire({
+                    showConfirmButton: false,
+                    imageUrl:'../../../media/conteo-min.gif'});
+                    setTimeout(() => {
+                        Swal.close();
+                        lotteryCards[0].classList.add('d-block');
+                    }, 3000);
+                }, 500);
+                    const refreshIntervalId = setInterval(() => {
+                        const progressbar = document.querySelector('.progress-contain');
+                        const firstProgressbar = document.querySelector('.progress-indicator')
+                        if (firstProgressbar) {
+                            firstProgressbar.remove();
+                        }
+
+                        const progressIndicator = document.createElement('div');
+                        progressIndicator.className = 'progress-indicator';
+                        progressIndicator.style.width = '0%';
+                        progressbar.appendChild(progressIndicator);
+
+                        setTimeout(() => {
+                            progressIndicator.style.width = '100%';
+                        }, 10)
+
+                        const getClass = getLastWord(lotteryCards[cards].getAttribute('class'));
+                        lotteryCards[cards].classList.add('d-block');
+                        const audioTag = lotteryCards[cards].getElementsByTagName('audio');
+                        const ficha = document.querySelector(`#ficha${getClass}`);
+                        if (audioTag[0] && hasSound) {
+                            audioTag[0].play();
+                        }
+
+                        if (!!ficha) {
+                            countIsWon++;
+                            setTimeout(() => {
+                                if (hasSound) {
+                                    if (Math.random() > 0.5) {
+                                        yesSound.play();
+                                    } else {
+                                        oneYesSound.play();
+                                    }
+                                }
+                                ficha.style.opacity = '1';
+                                flowerCard.style.opacity = '1';
+                                setTimeout(() => {
+                                    flowerCard.style.opacity = '0';
+                                }, 1000);
+                            }, 2500);
+                        } else {
+                            setTimeout(() => {
+                                if (hasSound) {
+                                    const valsound=Math.random();
+                                    if ( valsound >= 0.3) {
+                                        notSound.play();
+                                    } else  if (valsound >= 0.5) {
+                                        oneNotSound.play();
+                                    }else {
+                                        twoNotSound.play();
+                                    }
+                                }
+                            }, 2500);
+                        }
+
+                        cards++;
+
+                        if (cards >= lotteryCards.length || countIsWon === 9) {
+                            setTimeout(() => {
+                                if (is_won.won===true) {
+                                    Swal.fire({
+                                    showConfirmButton: false,
+                                    imageUrl:'../../../media/ganaste.gif'});
+                                    if (hasSound) {
+                                        winSound.play();
+                                    }
+                                } else {
+                                    Swal.fire({
+                                    showConfirmButton: false,
+                                    imageUrl:'../../../media/perdiste2000.gif'});
+                                    if (hasSound) {
+                                        lostSound.play();
+                                    }
+                                }
+                            }, 4000)
+                            clearInterval(refreshIntervalId);
+                            setTimeout(() => {
+                                location.href = '/endgame/1'
+                            }, 8000)
+                        }
+                    }, TIME);
+        }
+    });
+    });
+    function onfunc () {
+        const btnSound = document.querySelector('#btn-sound');
+        if (btnSound) {
+            if (hasSound) {
+                btnSound.innerHTML = `<svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-volume-mute-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708l4-4a.5.5 0 0 1 .708 0z"/>
+                                            <path fill-rule="evenodd" d="M9.146 5.646a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0z"/>
+                                    </svg>`;
+                hasSound = false;
+            } else {
+                btnSound.innerHTML = `<svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-volume-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8.717 3.55A.5.5 0 0 1 9 4v8a.5.5 0 0 1-.812.39L5.825 10.5H3.5A.5.5 0 0 1 3 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                                        <path d="M10.707 11.182A4.486 4.486 0 0 0 12.025 8a4.486 4.486 0 0 0-1.318-3.182L10 5.525A3.489 3.489 0 0 1 11.025 8c0 .966-.392 1.841-1.025 2.475l.707.707z"/>
+                                    </svg>`;
+                hasSound = true;
+            }
+        }
+    }
+
+    function endgame(){
+        $('.end-game').hide();
+        $('.cancel-game').show();
+    }
+
+    function terminar(){
+        $('.cancel-game').hide();
+        $('.end-game').show();
+      
+    }
+</script>
+{% endblock content %}

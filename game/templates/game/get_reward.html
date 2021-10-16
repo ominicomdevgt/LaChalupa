@@ -1,0 +1,67 @@
+{% extends "registration/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="viewport pb-5"  >
+    <div class="container d-flex flex-wrap justify-content-center align-items-center">
+     
+    <div class="col-md-8 col-sm-12" style="
+    border-radius: 15px;
+    border: solid 3px #eaba15;padding:30px;">
+  
+    {% if Validate == False %}
+        <h2 style="color: #047835;text-align: center;font-size:40px">Felicidades Ganador Selecciona la tienda más cerca para recoger tu premio</h1><br/>
+        <div class="media">
+          
+        <img class="rounded-circle account-img" src="{{ Game.reward.image.url }}">
+        <div class="media-body">
+          <h2 class="account-heading">Has Ganado {{ Game.reward.type_reward }}</h2>
+          <p class="text-secondary">En hemos enviado un correo electrónico con las instrucciones para cajear tu premio</p>
+          <p class="text-secondary">puedes recoger tu premio en: {{ Game.user.profile.city }}</p>
+          <form action="" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="store">Sucursal</label>
+                    <select name="store" id="store" class="custom-select">
+                        {% for store in Stores %}
+                            <option value="{{ store.pk }}">
+                                {{ store.name}}
+                            </option>
+                        {% endfor %} 
+                    </select>
+                </div>
+                {% if Game.reward.type_reward == 'Gorra' %}
+                <div class="form-group">
+                    <label for="genero">Género</label>
+                    <select class="custom-select" id="genero">
+                      <option value="Masculino">Masculino</option>
+                      <option value="Femenino">Femenino</option>
+                    </select>
+                  </div>
+                  {% if Game.reward.type_reward == 'Camiseta' %}
+                  <div class="form-group">
+                    <label for="talla">Talla</label>
+                    <select class="custom-select" id="talla">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </div>
+                  {% endif %}
+                {% endif %}
+                <br><br>
+                <button class="btn btn-outline-info" type="submit">Guarda tu ubicacion</button>
+          </form>
+        </div>
+      </div>
+      {% else %}
+      <h2 style="color: #047835;text-align: center;font-size:50px">Gracias por escoger tu tienda más cerca, acerca a tu tienda para recoger tu premio</h1>
+      
+    </div>
+    {% endif %}
+  </div>
+  </div>
+   
+      
+    
+{% endblock content %}

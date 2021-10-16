@@ -1,0 +1,81 @@
+{% extends "registration/baseadmin.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+    <div class="col-md-12">
+        <h1>Adminstracion de tiendas</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div>
+        <a href="{% url 'home-page' %}" class="btn btn-lg btn-outline-info">Regresar</a>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">Camisas Entregadas:</h5>
+              <p class="card-text">{{ camisetas }}</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">Gorras Entregadas:</h5>
+              <p class="card-text">{{ gorras }}</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">Juegos Chalupa Entregadas:</h5>
+              <p class="card-text">{{ chalupa }}</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">Liquido Entregado:</h5>
+              <p class="card-text">{{ liquido }}</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <table class="table table-hover" id="table_id">
+                <thead>
+                  <tr>
+                    <th scope="col">Fecha Entrega</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Premios</th>
+                    <th scope="col">Sucursal</th>
+                    
+                  </tr>
+                </tbody>
+                <tbody>
+                  {% for store in stores %}
+                    <tr>
+                      <th>{{ store.date_reward }}</th>
+                      <th>{{ store.user.first_name }}</th>
+                      <th>{{ store.user.profile.DNI }}</th>
+                      <th>{{ store.reward.type_reward }} {{ store.reward.gender }} </th>
+                      <th>{{ store.store.name }}</th>
+                      
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+        </div>
+        
+    </div>
+    
+    
+   <script>
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+   </script>
+    
+{% endblock content %}

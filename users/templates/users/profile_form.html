@@ -1,0 +1,106 @@
+{% extends 'registration/base.html' %} {% load crispy_forms_tags %} {% block content %}
+<style>
+  input {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+    .alert {
+        color: red;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    border: 3px solid red;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    }
+</style>
+<div class="viewportregistro">
+    <div class="container d-flex flex-wrap justify-content-center align-items-center">
+        <div class="content-section " id="formregistro">
+            <h1 style="width:100%;text-align:center;padding-top:10px;">INGRESA TUS DATOS</h1>
+            <p style="padding:10px;border:3px solid #ffc400;;width:100%;text-align:center;padding-top:10px;font-size:20px;color:#363636;background: #fff;"><a  data-toggle="modal"  style="cursor:pointer" data-target="#exampleModal">
+                VER EJEMPLO DE LA FOTOGRAFÍA DE TU COLECCIÓN
+              </a></p>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">EJEMPLO DE TU FOTOGRAFÍA</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="../../../media/home/ejemplo_chalupa.png" width="100%">
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <br/>
+            {{ user_form|crispy }}
+            <form action="" method="POST" id="personForm" enctype="multipart/form-data" data-cities-url="{% url 'ajax_load_cities' %}" style="font-size:18px;">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <div class="form-row">
+                        {% for field in form %}
+                        <div class='col-md-6'>
+                          {{ field|as_crispy_field }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <button id="btnforms" class="btn" type="submit">REGÍSTRATE</button>
+                </div>
+                
+            </form>
+        </div>
+        <img id="imgregistro" src="../../../media/registro/registro.png">
+    </div>
+</div>
+
+<!-- Modal Premio-->
+<div class="modal fade " id="modal-premio" tabindex="-1" role="dialog" aria-labelledby="modal-premioTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg " role="document ">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button " class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <img  id="img-premio" src="../../../media/home/ejemplo_chalupa.png" alt=" " class="img-fluid">
+        </div>
+      </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+ 
+
+    $("#id_country").change(function() {
+        var url = $("#personForm").attr("data-cities-url"); // get the url of the `load_cities` view
+        var countryId = $(this).val(); // get the selected country ID from the HTML input
+
+        $.ajax({ // initialize an AJAX request
+            url: url, // set the url of the request (= localhost:8000/hr/ajax/load-cities/)
+            data: {
+                'country': countryId // add the country id to the GET parameters
+            },
+            success: function(data) { // `data` is the return of the `load_cities` view function
+                $("#id_city").html(data); // replace the contents of the city input with the data that came from the server
+            }
+        });
+
+    });
+    
+   
+</script>
+
+{% endblock %}

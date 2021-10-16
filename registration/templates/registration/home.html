@@ -1,0 +1,103 @@
+{% extends "registration/base.html" %} {% block content %} {% load social_share %}
+<div class="viewportregistro">
+    <div class="container" id="alertverificacion" style="margin-top: -30px;">
+
+        {% if validar %} {% else %}
+        <a href="">
+            <picture>
+                <source srcset="../../../media/principal/" media="(max-width: 600px)">
+                <img src="../../../media/principal/cv.jpg" alt="Tu cuenta no esta verificada - CHALUPA TONA">
+            </picture>
+            
+        </a>{% endif %}
+
+
+    </div>
+    <div id="contenedordatos" class="container d-flex flex-wrap justify-content-between align-items-center" style="margin-top: -20px;">
+        <div id="infouser">
+            <div style="border-bottom: 5px solid #fad605;margin-bottom: 20px;">
+                <h1>BIENVENIDO {{ nombre }}</h1>
+                {% if validar %}
+                <h3 style="color:#fad605">CUENTA VERIFICADA  </h3>
+                {% else %}
+                <h2>TU CUENTA NO ESTÁ VERIFICADA </h2>
+                <p style="color:#fff;font-size:22px">Comentario:<span style="color:#fad605"> {{ Comentario.comment }}</span> </p> {% endif %}
+
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <div id="infopartidas">
+                        <span>ACCIONES ({{ acciones }})</span><br/>
+                        <span>CANTADAS GANADAS ({{ won }})</span><br/>
+                        <span>CANTADAS RESTANTES HOY ({{ Comentario.count }})</span>
+                    </div>
+                    <div class="redespartidas">
+                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=chalupatona.com" id="sharefacebook"> <img src="../.././../media/principal/sharefb.png"></a>
+                        <a target="_blank" href="https://www.facebook.com/messages/t/cervezatona" id="whatsapp"><img src="../.././../media/principal/WAPP.png"></a>
+                    </div>
+                </div>
+            </div>
+            <img src="../../../media/principal/4oportunidades.png">
+        </div>
+        <img class="d-none d-md-block" id="imgregistro" src="../../../media/principal/imagendash.jpg">
+    </div>
+
+
+ 
+    
+    {% if validar %} 
+    <div class="container d-flex flex-wrap justify-content-center align-items-center mt-5">
+        
+        {% if Comentario.count < 1 %}
+        <h4 style="color:#d40000"" class="col-12 text-center;color:red"> 
+            Por hoy haz utilizado todas tus cantadas, regresa mañana e inténtalo de nuevo...
+        </h4>{% endif %}
+   
+    <a id="btnpartida" href="{% url 'dashboard' %}" class="btn {% if Comentario.count < 4 %} btn-outline-secondary btn-lg disabled {% else %}  btn-primary btn-lg {% endif %}">Cantada 1</a>
+    <a id="btnpartida" href="{% url 'dashboard' %}" class="btn {% if Comentario.count < 3 %} btn-outline-secondary btn-lg disabled {% else %}  btn-warning btn-lg {% endif %}">Cantada 2</a>
+    <a id="btnpartida" href="{% url 'dashboard' %}"  class="btn {% if Comentario.count < 2 %} btn-outline-secondary btn-lg disabled {% else %}  btn-success btn-lg {% endif %}">Cantada 3</a>
+    <a id="btnpartida" href="{% url 'dashboard' %}"  class="btn {% if Comentario.count < 1 %} btn-outline-secondary btn-lg disabled {% else %}  btn-danger btn-lg {% endif %}">Cantada 4</a>
+</div>
+
+    {% else %}
+   
+    <div style="width: 100%;text-align: center;">
+    <a id="btnpartida" href="{% url 'dashboard' %}" class="btn  btn-outline-secondary btn-lg disabled ">Cantada 1</a>
+    <a id="btnpartida" href="{% url 'dashboard' %}" class="btn  btn-outline-secondary btn-lg disabled ">Cantada 2</a>
+    <a id="btnpartida" href="{% url 'dashboard' %}"  class="btn btn-outline-secondary btn-lg disabled ">Cantada 3</a>
+    <a id="btnpartida" href="{% url 'dashboard' %}"  class="btn  btn-outline-secondary btn-lg disabled ">Cantada 4</a>{% endif %}
+</div>
+
+
+
+
+</div>
+<!-- Modal Premio-->
+<div class="modal fade" id="modal-partida" tabindex="-1" role="dialog" aria-labelledby="modal-partidaTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                <img id="img-partida" src="" alt="" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button id="btn-start" type="button" class="btn btn-warning btn-lg" data-dismiss="modal" onclick="start(this)" style="width: 100% !important;">Empezar Cantada</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function open_modal(element) {
+        $("#img-partida").attr("src", $(element).attr("src_modal"));
+        $("#btn-start").attr("url", $(element).attr("url"));
+        $("#modal-partida").modal("toggle");
+    }
+
+    function start(element) {
+        window.location.href = $(element).attr("url");
+    }
+</script>
+
+
+{% endblock content %}

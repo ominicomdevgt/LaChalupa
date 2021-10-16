@@ -1,0 +1,138 @@
+{% extends "registration/base_landing.html" %} {% block content %}
+<style>
+    .close{
+        font-size: 60px;
+    }
+
+    .modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    text-align: center;
+}
+</style>
+<div id="carouselprincipal" class="carousel slide" data-ride="carousel" >
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+                <picture>
+                    <source srcset="../../../media/home/mobile3.jpg" media="(max-width: 600px)">
+                    <img srcset="../../../media/home/b3.jpg" alt="CHALUPA TOÑA COLECCIÓN" style="width: 100%;">
+                </picture>
+        
+        </div>
+        <div class="carousel-item ">
+         
+                <picture>
+                    <source srcset="../../../media/home/mobile10.jpg" media="(max-width: 600px)">
+                    <img srcset="../../../media/home/b12.jpg" alt="CHALUPA TOÑA COLECCIÓN" style="width: 100%;">
+                </picture>
+      
+        </div>
+        <div class="carousel-item ">
+            <div id="botonesslider" class="carousel-caption d-md-block">
+                <a href="/login" id="btns" class="btn btn-warning btn-lg">JUGAR AHORA</a>
+                <a  id="btns" href="/user-registro" class="btn btn-success  btn-lg d-none">REGÍSTRATE</a>
+            </div>
+            <picture>
+                <source srcset="../../../media/home/mobile7.jpg" media="(max-width: 600px)">
+                <img srcset="../../../media/home/b8.jpg" alt="CHALUPA TOÑA COLECCIÓN" style="width: 100%;">
+            </picture>
+  
+    </div>
+  
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselprincipal" role="button" data-slide="prev">
+        <img src="../../../media/home/arrow.png" style="width: 50px;">
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselprincipal" role="button" data-slide="next">
+        <img src="../../../media/home/arrow2.png" style="width: 50px;">
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div name="premios" id="dpremios">
+    <div class="container d-flex flex-wrap justify-content-around align-items-center">
+        <h1>PREMIOS</h1>
+        <div class="grupopremio">
+            <img src="../../../media/home/dpremio1.png" alt="PLAYERA CHALUPA MUJER" src_modal="../../../media/home/premio11.jpg" onclick="open_modal(this);">
+            <p>CAMISETA <br/>CHALUPA/MUJER</p>
+        </div>
+        <div class="grupopremio">
+            <img src="../../../media/home/dpremio2.png" alt="PLAYERA CHALUPA HOMBRE" src_modal="../../../media/home/premio22.jpg" onclick="open_modal(this);">
+            <p>CAMISETA <br/>CHALUPA/HOMBRE</p>
+        </div>
+        <div class="grupopremio">
+            <img src="../../../media/home/dpremio32.png" alt="GORRA GUARDABARRANCO BLANCA" src_modal="../../../media/home/premio331.jpg" onclick="open_modal(this);">
+            <br><p>GORRA </br>GUARDABARRANCO</p>
+        </div>
+        <div class="grupopremio">
+            <img src="../../../media/home/dpremio42.png " alt="GORRA GUARDA BARRANCO VERDE " src_modal="../../../media/home/premio441.jpg " onclick="open_modal(this);">
+            <p>GORRA<br/>MACHO RATÓN</p>
+        </div>
+        <div class="grupopremio">
+            <img src="../../../media/home/dpremio5.png " alt="JUEGO DE MESA CHAPULA " src_modal="../../../media/home/premio55.jpg " onclick="open_modal(this);">
+            <p>JUEGO DE MESA<br/>CHALUPA TOÑA</p>
+        </div>
+        <div class="grupopremio">
+            <img src="../../../media/home/dpremio6.png " alt="LIQUIDO GRATIS " src_modal="../../../media/home/premio66.jpg " onclick="open_modal(this);" style="margin-top:-25px">
+            <p>12 PACK GRATIS</p>
+        </div>
+        
+    </div>
+    
+</div>
+
+<!-- Modal Premio-->
+<div class="modal fade " id="modal-premio" tabindex="-1" role="dialog" aria-labelledby="modal-premioTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg " role="document ">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+            <button type="button " class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <img  id="img-premio" src=" " alt=" " class="img-fluid">
+        </div>
+      </div>
+    </div>
+</div>
+<div name="dinamica" id="dinamica" style="border-bottom: 10px solid #f0ac0f;padding-bottom: 50px; ">
+    <div   class="container d-flex flex-wrap justify-content-around align-items-center">
+        <div class="instrucciones">
+            <h1>INSTRUCCIONES<br/> DE DINÁMICA</h1>
+            <ul>
+                <li><img src="../../../media/home/1.png"> Ten a mano tu colección completa de latas y botellas</li>
+                <li><img src="../../../media/home/2.png">Registra tus datos</li>
+                <li><img src="../../../media/home/3.png">Verifica tu cuenta subiendo una foto con tu colección <a class="link-modal " style="cursor:pointer;text-decoration: underline;  color:#167f19 !important;" src_modal="../../../media/home/ejemplo_chalupa.png" onclick="open_modal(this);">(Ver ejemplo)</a></li>
+                <li><img src="../../../media/home/4.png"> Juega para ganar <i>* Las cantadas no son acumulables</i></li>
+                <li><img src="../../../media/home/5.png"> Si ganaste, selecciona donde deseas canjear tu premio y listo</li>
+            </ul>
+        </div>
+        <div class="videoinstrucciones" style="margin-bottom: 30px;">
+            <iframe  src="https://www.youtube.com/embed/dPhn8KKFUsg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+<div id="dbonus" >
+    <div  id="bonusinterior" class="container d-flex flex-wrap justify-content-between align-items-center text-center">
+        <img src="../../../media/home/Ticketfinal.png" width="300">
+        <img src="../../../media/home/bonus.png" width="220">
+        <p>Cada vez que juegas la Chalupa en la página web, ganas una acción para participar en el sorteo de los ganadores de la Gran Cantada de la Chalupa Toña.</p>
+    </div>
+</div>
+<div class="corazonnica">
+    <img src="../../../media/home/corazonnicav3.png" alt="Nica de corazón">
+</div>
+<script>
+
+    
+    function open_modal(element){
+
+        $("#img-premio").attr("src", $(element).attr("src_modal"));
+        $("#modal-premio").modal("toggle");   
+    }
+</script>
+
+
+{% endblock content %}

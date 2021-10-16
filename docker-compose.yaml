@@ -1,0 +1,21 @@
+version: '3'
+services:
+  web:
+    build: .
+    container_name: LaChalupa
+    volumes:
+      - ./code:/src
+      - ./config/nginx/certs/:/etc/certs
+    command: bash -c "gunicorn --certfile=/etc/nginx/config.d/certs/www.chalupatona.com.crt --keyfile=/etc/certs/chalupatona_com.key LaChalupa.wsgi:application --bind 0.0.0.0:443"
+    expose:
+      - "443"
+  nginx:
+    build: ./nginx
+    container_name: ng
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./config/nginx/:/etc/nginx/config.d
+    depends_on:
+      - web

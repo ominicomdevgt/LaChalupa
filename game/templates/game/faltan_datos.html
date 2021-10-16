@@ -1,0 +1,32 @@
+{% extends "registration/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="viewport pb-5"  >
+    <div class="container d-flex flex-wrap justify-content-center align-items-center">
+     
+    <div class="col-md-8 col-sm-12" style="
+    border-radius: 15px;
+    border: solid 3px #eaba15;padding:30px;">
+  
+  <h1 style="color: #047835;text-align: center;font-size:50px">TU PERFIL NO ESTA COMPLETO <br/> DEBES COMPLETAR TU REGISTRO</h1>
+  
+  <p style="margin:0 auto;position:relative;text-align:center;width90%;font-size:35px;">Completa tus datos y regresa a esta url para validar tu premio</p>
+
+  <div class="text-center">
+    <a href="{% url 'profile' pk=request.user.profile.pk %}" id="btnforms" class="btn">Actualizar datos</a>
+    
+  </div>
+
+
+    
+      
+    </div>
+    
+  </div>
+  </div>
+
+
+
+
+{% endblock content %}

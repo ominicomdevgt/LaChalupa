@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align:center">
+    <img src="https://chalupatona.com/media/hdpremio.jpg"> <br/>
+    <h1>GANASTE: {{ game.reward.type_reward }}</h1>
+    {% if game.reward.type_reward == 'Gorra' or game.reward.type_reward == 'Camiseta'  %}
+        <h2>Genero {{ game.reward.gender }}  
+        {% if game.reward.type_reward == 'Camiseta' %}
+        Talla:{{ game.reward.size }} </h2>
+        {% endif %}
+        <p>Producto sin derecho a cambio.</p>
+    {% endif %}
+    
+    <h2>La Sucursal donde debes de ir a recoger tu premio es: <br/> {{ game.store.name }}</h2>
+    <h2>ACCIÓN No.: {{ game.PID }}</h2>
+    <p>Para más informacion: <a href="https://chalupatona.com/preguntas">Preguntas Frecuentes</a></p>
+    <img src="https://chalupatona.com/media/ftpremio.jpg"> 
+</div>
+    
+</body>
+</html>

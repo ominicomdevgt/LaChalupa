@@ -1,0 +1,82 @@
+
+{% extends "registration/baseadmin.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<div style="width: 100%; text-align: center;">
+    <div class="col-md-12">
+        <h1>Adminstracion de tiendas</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div>
+        <a href="{% url 'home-page' %}" class="btn btn-lg btn-outline-info">Regresar</a>
+        <a href="{% url 'ganador-id' pk=sucursal won=1 %}" class="btn btn-lg btn-outline-info">Listado Ganadores</a>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">Premios Totales:</h5>
+              <p class="card-text">{{ game_all }}</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">Premios por Entregar:</h5>
+              <p class="card-text">{{ game_por_entregar }}</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title">Premios Entregados:</h5>
+              <p class="card-text">{{ game_entregados }}</p>
+            </div>
+        </div>
+        
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <table class="table table-hover" id="table_id">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Premio</th>
+                    <th scope="col">Premios Totales</th>
+                    <th scope="col">Premios Por Entregar</th>
+                    <th scope="col">Premios Entregados</th>
+                    <th scope="col">Total Inventario</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  {% for store in rewards %}
+                    <tr>
+                      <th>{{ store.pk }}</th>
+                      <th>{{ store.type_reward }} {{ store.gender }} {{ store.size }}</th>
+                      <th>{{ store.todos }}</th>
+                      <th>{{ store.por_recorger }}</th>
+                      <th>{{ store.recogidos }}</th>
+                      {% if store.sucursal == 1 %}
+                      <th>--</th>
+                      {% else %}
+                      <th>{{ store.Total }}</th>
+                      {% endif %}
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+        </div>
+        
+    </div>
+  </div>  
+    
+   <script>
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+   </script>
+    
+{% endblock content %}

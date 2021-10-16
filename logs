@@ -1,0 +1,2100 @@
+commit 179394071440d0062f28465c4ed409f37b98d565
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 15:12:13 2020 -0600
+
+    base
+
+commit 315f5bcb4b63adc9e6b499f612663e50b91341ea
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 13:43:11 2020 -0600
+
+    form correo
+
+commit b10396789bdba7ad6c5dcc4d9aa4d73512b8dd17
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 12:52:53 2020 -0600
+
+    todo
+
+commit d41bcf012e9e2184ed3aa521f590e34d4c89683c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 12:36:58 2020 -0600
+
+    Update signals.py
+
+commit 701b59aaa4b4afcd5b977c47b8984136cd93885e
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 12:34:38 2020 -0600
+
+    Update email_noverificado.html
+
+commit c8258180b43b924cbebe479dfbe4f96b51a0532a
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 12:32:01 2020 -0600
+
+    Update email_noverificado.html
+
+commit 8af9b0cc99a9824a122cf73ea857a84af3dcef45
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 11:55:43 2020 -0600
+
+    Update profile.html
+
+commit b77ebea436467ab32685da8c6a7b1630afc5b9e6
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 11:28:02 2020 -0600
+
+    Update views.py
+
+commit b4229c12730c8112c42271205027fd39140ac6db
+Merge: 3747f5f ee3664e
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 11:09:19 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 3747f5f24feece937fc695655ca1cbcada2a5ff3
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 11:09:08 2020 -0600
+
+    emial cam
+
+commit ee3664e5c4d007799a6080b3f86e9ce928ace3dc
+Merge: e682cc5 117640b
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 11:05:56 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit e682cc5926533838b4530c91b338aee49518ea9f
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 11:05:53 2020 -0600
+
+    Cambios
+
+commit 40a755f317b12cc6ed28ff4257e0a37ff1b4f277
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 11:01:54 2020 -0600
+
+    Cambio warning profile
+
+commit 117640b08cc32614f278d8a014b04365acf1bc3e
+Merge: c1dadb0 8cfa15c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 11:01:29 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit c1dadb0c9cc9543150e37c27e6c1d5092981c6bd
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 11:01:25 2020 -0600
+
+    envio correo veri
+
+commit 8cfa15c91afcbf19bac2e5ad0a8d814619071f35
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 10:55:29 2020 -0600
+
+    Cambios boton
+
+commit e2ee255667dab77cbb93076eb25ac826d9ac8d3d
+Merge: c6f984f b6e4653
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 09:49:20 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit c6f984f152a79e5d326e688f85b5e44cf0aafb98
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 09:49:07 2020 -0600
+
+    imagnes productos
+
+commit b6e465332e7bacfe4694e23ca23a0606da5e979b
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 09:31:54 2020 -0600
+
+    cam
+
+commit d07b95bbc7aa9d015829555302fded02c98c8899
+Merge: 47ab0d0 d27d4bd
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 09:26:48 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 47ab0d0f6b3b587dd33555bf037f4c4715009092
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 09:26:36 2020 -0600
+
+    Update baseadmin.html
+
+commit d27d4bd020ca0d4cc1341f974a074cea1f91074b
+Merge: 4dccabc c55ce9e
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 09:25:26 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 4dccabc8cd852484616f6fc6a6b07eb45e4b8286
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 09:25:17 2020 -0600
+
+    Imgenes
+
+commit c55ce9e16396d66759e5198f649452ccc3d2691d
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 18 09:20:35 2020 -0600
+
+    todo
+
+commit 7f9ffa27a393982c5aabd897c42cfb7a958c73ba
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 07:12:30 2020 -0600
+
+    3 sonidos no
+
+commit eda8524c53ce84878d156ae65bddd465a135ba72
+Merge: 116afdb 5fefea8
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 07:01:55 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 116afdb0ae950dc7cd035201bdc83a291d6d5001
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 18 07:01:52 2020 -0600
+
+    Cambios front
+
+commit 5fefea8f7cbb65364d302a3af096ad4fdfb01c82
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Tue Nov 17 23:57:52 2020 -0600
+
+    map added
+
+commit 7f7069b27ada583aa06235694bfaf3565fbc6a91
+Merge: 3f873c4 db5b6e6
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Tue Nov 17 23:07:06 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 3f873c44f83e689e0b204ec420c5fdce9576735e
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Tue Nov 17 23:06:43 2020 -0600
+
+    added map
+
+commit db5b6e60dd73ae153fcac211f6bf94507c9691b4
+Merge: b954c61 dac1991
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 22:42:15 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit b954c6122fd8145dd10b7bf9b3f3a9283b165256
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 22:41:53 2020 -0600
+
+    todo bm
+
+commit dac1991ea506415fd30551eeadf6b7210b7c0f56
+Merge: a1d8869 44a5678
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 21:41:46 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit a1d8869099e9b60b052cd59bc0f58259d2d01b79
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 21:41:38 2020 -0600
+
+    Cambios
+
+commit 44a56785ec5ffef29708985cba577c35566d45ae
+Merge: d6dc2cb dc578ab
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 21:39:26 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit d6dc2cbc4203f6ed53faf0a6ee72f4de20c6ce4b
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 21:39:21 2020 -0600
+
+    todo
+
+commit dc578ab10202cf001eaa7ce55571dcb4143ddf54
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 21:04:51 2020 -0600
+
+    pointer terminar
+
+commit 05a1830929ce3afecc460dd3fdda3f9a82c9f8e0
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 21:03:08 2020 -0600
+
+    Cambios en css de inputs
+
+commit db5995376bb68ead66422513e7244bb23b7a0dcb
+Merge: a4c776e 77a9d39
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 20:46:08 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 77a9d3998605af02aa3f918969f5c10597519d04
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 19:51:11 2020 -0600
+
+    Update views.py
+
+commit a68cbd11b3e9c785c5a72c1c9504bf45d005a060
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 18:48:15 2020 -0600
+
+    Update email.html
+
+commit a17e15ba3a04ef3208416511b0bb7da12abee4cc
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 18:18:19 2020 -0600
+
+    Update views.py
+
+commit a4c776e88932e7f52c5ce4fa6f430606b6eeced4
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 17:56:09 2020 -0600
+
+    Cambios
+
+commit 629bf21c3d934cceed5039d831fc80d5d8d93a25
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 17:50:41 2020 -0600
+
+    todo
+
+commit 97b634160ed0884703485535b2848c767d7b322e
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 17:37:03 2020 -0600
+
+    Update preguntas.html
+
+commit edcc49b21b2a6a47015b558766e1feecd5443efb
+Merge: 6ec194f dec1783
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 17:23:49 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 6ec194f650822f90a7671682fbaafe06cd68bc5e
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 17:23:40 2020 -0600
+
+    Cambios
+
+commit dec17831bdd4fb002d86ef45e5357bb132d7c0d4
+Merge: 2b722db d43e91c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 17:23:32 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 2b722db1458e07323f7a67fe244e1024822f6179
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 17:23:22 2020 -0600
+
+    todo
+
+commit d43e91ccda87eccbdecf951f6ec249961d819f38
+Merge: 551a8ee 709bf8c
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 17:11:58 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 551a8eed06e28bd531803bde3d4f7ca6e4a628bd
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 17:11:48 2020 -0600
+
+    Cambios
+
+commit 709bf8cf1a35a3f0ea2a7add9986931e875d54da
+Merge: c17e0cf 0717375
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 17:10:25 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit c17e0cf9a7e15d13dc857ec8e1f524e788e955bb
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 17:10:14 2020 -0600
+
+    todos
+
+commit 07173759f98c85fea7f87537929a3a32951c3f48
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 17:07:47 2020 -0600
+
+    Cambios
+
+commit 27e17a58a78e10546712969b39eea73119f23b4f
+Merge: 268111b a2ac917
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 16:50:23 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 268111bb56db16fd57b1bcaa9e10ec71ae9965ff
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 16:50:03 2020 -0600
+
+    cambios paginas
+
+commit a2ac917e804bd8882c0a748b48454da81103546c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 16:49:33 2020 -0600
+
+    Update views.py
+
+commit ad924a59f844d7afc56f2a39b73557ce6ff95559
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 16:44:54 2020 -0600
+
+    todo
+
+commit ffff64da428875be03be3c92095a8416812e2d34
+Merge: 8087100 4e3fece
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 16:40:06 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 8087100e22ba4df6d49385439a0852e81bc9a76e
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 16:36:26 2020 -0600
+
+    todo
+
+commit 4e3fece1106909228cf511ac894e728165fb03f7
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 16:34:44 2020 -0600
+
+    cambios
+
+commit 1e3d136db68f14af45bdf6281e6e6130814aa8cf
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 16:32:55 2020 -0600
+
+    Cambios  jc
+
+commit 5ac80cd166d808e3724131daebc90436880c7338
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 16:14:53 2020 -0600
+
+    Update views.py
+
+commit ecbdb7597cbbe03de6897e07dc408dfae44c92e3
+Merge: 3fdea8d 25c84fa
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 15:53:19 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 3fdea8d756fdd0314218ec55662f1285d805ad8a
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 15:52:13 2020 -0600
+
+    cmabios
+
+commit 25c84fa01c7e26247fb0ba1ee0a289d3fb6cdf6f
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 15:52:05 2020 -0600
+
+    cambios
+
+commit 88cd7e8ebc754003cb43930f9376e971df593022
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 15:20:19 2020 -0600
+
+    cambios
+
+commit 03573dbffda29a2cee3159aa8c99552f70746e92
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 14:50:37 2020 -0600
+
+    cambio rutas
+
+commit c3f7dbdce76490dad3cddea01d4038f115375e5b
+Merge: a1c5290 d2dba0b
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 14:07:58 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit a1c52908d6c1a0b1f05de40188915a2995ee3602
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 14:07:47 2020 -0600
+
+    Update settings.py
+
+commit d2dba0b96c9d2e754d024b3a586cd50d9d6a15cf
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 13:44:06 2020 -0600
+
+    CambiosFront
+
+commit ee25aafce3fc2cbd144dab8c60f1a3e1f9b1748e
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 12:56:59 2020 -0600
+
+    Cambio
+
+commit 3cb0e2622eb3239f3ef42360e504bde115e4737b
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 12:19:58 2020 -0600
+
+    Cambios
+
+commit 708311a9c4a042a2c04fbb82ce589d836f85046c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 11:56:18 2020 -0600
+
+    todo
+
+commit 314684a27e21cb65d4046b96c2d006756843d57e
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 11:05:57 2020 -0600
+
+    Update views.py
+
+commit e1a8cf0543124ecf6200405242b219f51f266942
+Merge: 622d00b 7f35847
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 11:02:48 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 622d00b4923f24fd1e11f721ed8ccb679ac4b984
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 11:02:45 2020 -0600
+
+    todo cambio
+
+commit 7f358472f7eefbaf849645c6bf63b7e96cc6566a
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:59:41 2020 -0600
+
+    Cambios
+
+commit 123ef639d4f8d6c14bea0f857dbcb301533b1165
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:58:28 2020 -0600
+
+    cambio más
+
+commit 9e9e1a2991d04f63383fab24eebd612f21775cb0
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:56:56 2020 -0600
+
+    Juega de nuevo
+
+commit 92a05896cd3eec52726550144a6147297fdd5346
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:55:36 2020 -0600
+
+    Cambio
+
+commit f3670604fd00d8b1b49e30c125c2296a119903a9
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:37:42 2020 -0600
+
+    Banner mobile
+
+commit 060bbae168d793e34523082da59a5a8d391ebeb5
+Merge: fb6be56 aa4d9c8
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:25:51 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit fb6be56b556ea3458fda6f77fd722a630f8f0d16
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:25:40 2020 -0600
+
+    Cambios
+
+commit aa4d9c8bd9430e7baf4fabc3e632ef14dc6242b4
+Merge: ea2b9c7 7bb33a9
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 10:24:22 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit ea2b9c77087724d3bfabf7b80bcc4ad6d26d9afc
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 10:24:10 2020 -0600
+
+    Update oldgame.html
+
+commit 7bb33a90dd510dd509d351f788110e4e6750bc3c
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:24:00 2020 -0600
+
+    Cambio accion
+
+commit 8d01f28556aec99718883b721ba114479abf027b
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:21:08 2020 -0600
+
+    Cambios finales
+
+commit e835a14824ad55807dfc70820294b983571f53bc
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:17:19 2020 -0600
+
+    Header premio
+
+commit d1a857aab3c0dcbc51ef81699eb370b7cdd3765f
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:12:56 2020 -0600
+
+    Cambios front premio
+
+commit 2923e6a098da6c9dc6599c5a121ee51564b76d07
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:09:33 2020 -0600
+
+    premio
+
+commit aa12ce3687a55dbcc2eebc9af952b96b3a82f07f
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 10:05:22 2020 -0600
+
+    cambios
+
+commit fd6f54f9f0fcf57134c486bd22915239bca5dab2
+Merge: bdb2a12 df199d5
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 09:59:00 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit bdb2a1258508b0d7186293a8c5d8c420a85e95ad
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 09:58:48 2020 -0600
+
+    Front premio
+
+commit df199d5519b50e33ff287c34145e5b1d23e0329f
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 09:57:41 2020 -0600
+
+    Update views.py
+
+commit 4d4dc24b8850c230bbdcac61ec509a054a465136
+Merge: b713d44 f7436fa
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 09:51:42 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit b713d4490f0d41180497589db5f7a46488ab6758
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 09:51:39 2020 -0600
+
+    cambio banner
+
+commit 3d524befb9fc003af2b495a87603f78b51e82acf
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 17 09:50:36 2020 -0600
+
+    Cambios
+
+commit f7436fafca0218d68ba4c14cd792338b88f6eb8e
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 09:48:57 2020 -0600
+
+    Update old_games.html
+
+commit 1dce4f841446721679db1c6e9f8e544a46fc6db9
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 09:39:34 2020 -0600
+
+    Update register.html
+
+commit 9020009e3a695127dfb4f68be3144b17d8e0a307
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 09:29:00 2020 -0600
+
+    correo
+
+commit 96122d0bda6592ba91e56e4432b65ee020728c8c
+Merge: 4c806ca 6fd0427
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 09:00:04 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 4c806ca98bf9fdf7e982f24335383d88d887c653
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 17 08:59:57 2020 -0600
+
+    cambio correo
+
+commit 6fd0427d1b2c2d1a45bbdc7af87ff462d74a821a
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 23:10:34 2020 -0600
+
+    Finales
+
+commit be05600475d50000ebc86af4e7aeadad4598bee4
+Merge: bfd779a e4bdcb8
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 23:08:23 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit bfd779a62ccdcd649a327e9c4f528924cfe5fbc8
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 23:08:09 2020 -0600
+
+    cambios de idioma
+
+commit e4bdcb87a7bb164282e25fb126bdd35edd0b2a8f
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 23:05:44 2020 -0600
+
+    Cambio en juego
+
+commit 8700b335ea84ddd74f6a637be3f414d5581b181b
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 22:56:09 2020 -0600
+
+    Cambios font
+
+commit 6369121d089c11836ef82c0c0c3e6af670668e7c
+Merge: 6fda61f 4fbee9e
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 22:52:06 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 6fda61f5f6bfc7baec8b28d7b0ab6799aed5a2ab
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 22:51:14 2020 -0600
+
+    cambios juego
+
+commit 4fbee9e389e40c793f4c1014c7a39aff64e62bce
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Mon Nov 16 22:07:57 2020 -0600
+
+    updated, show card until hiddes counter and sound button centerd and bg-red
+
+commit 54970b5df7dbe3138cc4e31c500cc4062d8de5a7
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 21:23:15 2020 -0600
+
+    Cambios
+
+commit 2883d8455079f13aae1ad9eb32a5b7a5f43229c0
+Merge: ec89c53 75dab66
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 21:09:26 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit ec89c53d4d45b4c3155922d58ebeae36b11ae0f7
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 21:09:21 2020 -0600
+
+    Cambios perfil
+
+commit 75dab66e072d736b68863c7d05917a9f948417c1
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 20:34:16 2020 -0600
+
+    todo
+
+commit 29fc807f0f1792742b81e44edafb1496a745338c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 20:00:18 2020 -0600
+
+    Update forms.py
+
+commit 376259ef6ac9430d43770c46cb6403167cb06df0
+Merge: a83f643 e8e6864
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:51:57 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit a83f643999ed8dd4dc3bdb3fd5ef0b40dad8aa63
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:51:54 2020 -0600
+
+    4
+
+commit 8d54d66e9a276ac69480f6b2dcac840dee44047c
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:47:39 2020 -0600
+
+    Cambio comentario
+
+commit 157847a5537bef3dba8fbcdd29565099e604d8f3
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:46:29 2020 -0600
+
+    cambios en home
+
+commit e8e68645c4a6cbee0a3ed421e3646984f213edf0
+Merge: 360c098 c8a23ac
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 19:44:34 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 360c098abf64b6f34308b67606c131dd8fa5860c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 19:44:23 2020 -0600
+
+    todo
+
+commit c8a23ac78b927fd5e51a9b7452f7d084a7337e16
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:41:45 2020 -0600
+
+    Quitar completar perfil
+
+commit 0a76018024404975e3cbcfd2334733eec336733d
+Merge: 70e16e7 beb7f6e
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:41:36 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit beb7f6e862da89b854eb695f4fb0bf5f47c559fc
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 19:40:37 2020 -0600
+
+    Update views.py
+
+commit 70e16e77991dde07bc8d650cdf551b17ca10e6cd
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:40:18 2020 -0600
+
+    Centro login
+
+commit f693694e49bfc65c5c0ec84d65e3d7dd11792baf
+Merge: 2d85fbd 03e43f1
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 19:35:33 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 2d85fbd9c9179fcf7b92ad5da4ba56098a30bb1f
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 19:35:28 2020 -0600
+
+    Update forms.py
+
+commit 03e43f14822bbf21503b90c61b966ea353e98648
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:28:00 2020 -0600
+
+    Nuevos banners
+
+commit c0f34eec2338e4d27b496247d1325346203697e3
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:26:45 2020 -0600
+
+    sin tilde
+
+commit f87c63e630600efeb27f1a68433de3df3ad3787c
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:24:41 2020 -0600
+
+    Cambios
+
+commit 4c8e14ce273b23d1ded509643b33109d76248c5e
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:22:12 2020 -0600
+
+    cambio ss selecciona
+
+commit 777ee61628c13e295d86846f9d9b6d65bd8e0961
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:17:36 2020 -0600
+
+    Cambio pus
+
+commit 826bf75e7d157d90a6cce9c05bb0c61480c195c4
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 19:14:07 2020 -0600
+
+    Cambios
+
+commit d8d879318fe26341030adfacbd5dc2fd24aa34e3
+Merge: 797c1c6 b0d9c90
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 18:58:18 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 797c1c6cd5b0ff7cf337e0d5c79b709b6a7b5cef
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 18:58:07 2020 -0600
+
+    cambios
+
+commit b0d9c90d88245ce5eca70544afce116c15e04dc8
+Merge: 68cbe80 80ac22f
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 18:57:35 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 68cbe807a6f3ee8a36af86ba042ddabf4e2ec2ad
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 18:57:22 2020 -0600
+
+    todo
+
+commit 80ac22f3e879ab761eb8f619a0d2551c1e64af29
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 18:49:24 2020 -0600
+
+    cambios
+
+commit 3c3378331594f841d2d0f905e1cb25abe3589be7
+Merge: 95fc479 da77597
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 18:45:42 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 95fc4790dd5e4588808c7487a466dbdcbf7f9898
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 18:45:38 2020 -0600
+
+    cAMBIOS DE FRONT
+
+commit da77597bba5d8b69d0bbcb3c7b9b881654955f34
+Merge: ea2adbe 6a8d43d
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 18:09:31 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit ea2adbe0ad860810dfaf2aca78d29f1054a1e087
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 18:09:27 2020 -0600
+
+    cambios
+
+commit 6a8d43d4fd8483ee75d04500bdf0089fb29ab92d
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 17:43:05 2020 -0600
+
+    Cambiosnuevos
+
+commit 693f7614885c31df6ed95326fa5eaa59daea7f68
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 17:40:57 2020 -0600
+
+    Reemplaza
+
+commit 8169770dd34a098a6d55cd98ad019a9953c2043d
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 17:34:23 2020 -0600
+
+    Cambios landing
+
+commit 00545043f6fe1072563d1aab6052dd98dd4916e3
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 17:32:00 2020 -0600
+
+    otravez
+
+commit 0360d79de618c5e23ff8a9456888a1a5a3d6fcec
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 17:28:09 2020 -0600
+
+    Nuevas imágenes
+
+commit 364b6513dd1f08cdaa2e21fcddae048355034ce7
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 17:25:20 2020 -0600
+
+    Nuevas Imágenes
+
+commit 1af56b5cfb9e863ece5d713b2f4831774f3772b9
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 17:14:21 2020 -0600
+
+    imágenes nuevas v1
+
+commit b5394a7c1298c8653c46acfe80a65e617a986599
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 16:52:29 2020 -0600
+
+    Cambios Landing
+
+commit 7bf443a3dad9b2d146528960246aaeee3092d511
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 15:50:19 2020 -0600
+
+    Update register.html
+
+commit 0281884135e8fc9031d2b76e021e1d5c057480c0
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 15:48:06 2020 -0600
+
+    cambio todo
+
+commit f333d09d20a2fa01efa9a2f72c9f257c3a4a4c3d
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 15:42:14 2020 -0600
+
+    Update forms.py
+
+commit 4020df65d01089a9626032d5284d6122c9fc46f6
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 15:36:32 2020 -0600
+
+    Update email.html
+
+commit 744303efa5e2f4c67c47f7164118d72ff8a19601
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 15:35:12 2020 -0600
+
+    Update forms.py
+
+commit 62828cd53cab7fb9caf47b59ff01bb3f57d0744a
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 14:56:09 2020 -0600
+
+    Update views.py
+
+commit 3e3232f1acbed7e05b5f275ed4140d42395cb2c9
+Merge: 6f266b1 104593a
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 14:54:55 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 104593a2172ef7dcc68fe72971df538f2d5e3aec
+Merge: 9c7be4c 02ec1ee
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 14:54:33 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 6f266b1a166de19c5d1c4e9da54857d4d342e742
+Merge: e90b2cf 02ec1ee
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 14:54:30 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 9c7be4c5ee512b2aefe4b40fa15eac865be60379
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 14:54:24 2020 -0600
+
+    ambios endgame
+
+commit e90b2cff1dab7a9efc6be6a06a47a553146e99b9
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 14:53:48 2020 -0600
+
+    cambios
+
+commit 02ec1ee3989fa7cb8c388ba1ebaf1e46d882620d
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 14:51:48 2020 -0600
+
+    Videos
+
+commit c470ea787177feb5b7e1282945fd910c0b26d2ad
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 14:41:56 2020 -0600
+
+    Imagen recuerda juega
+
+commit 266e0e562c3c236e83ea62b28e11c2d92eef74c3
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 14:36:56 2020 -0600
+
+    Faltan datos
+
+commit 8a5f00ce6e455c9778c30dedeace038b7852f411
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 14:30:43 2020 -0600
+
+    premio 0
+
+commit 824d6b75ca1b1f2144af48ba5cafd49a55937214
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 14:19:23 2020 -0600
+
+    Update views.py
+
+commit 459bf20f0a700d9fb2e0a27ffb0ef7657ec0d7ed
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 14:17:51 2020 -0600
+
+    Tiporeward
+
+commit 0977a02832eb70fac7885a2e4ea25469bd64b974
+Merge: 929c4f9 fafbf0b
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 14:15:15 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 929c4f98df88ba5aed02d33932bb58b66f50db99
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 14:15:01 2020 -0600
+
+    sd
+
+commit fafbf0bbdd02d50dfde94fa87035df710cf78540
+Merge: a8cb708 70c2907
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Mon Nov 16 14:13:54 2020 -0600
+
+    merged changes
+
+commit a8cb708ee60211059508b8bb8427f89e006135ec
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Mon Nov 16 14:11:30 2020 -0600
+
+    added, ramdom yes or not sounds
+
+commit 70c29072d8a753efc7c3f2aed29e47771ac51dce
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 14:09:27 2020 -0600
+
+    cambios genero
+
+commit 8613009f54ff82c06481d3dace8bea0650786155
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 14:05:03 2020 -0600
+
+    Tipo Reward
+
+commit ca5effb5ac5d175ecfb46e88379c36e742f50056
+Merge: f18eb15 525cb95
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 13:59:13 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit f18eb15804de3423eef8e00a7cbe1152f31c3797
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 13:59:02 2020 -0600
+
+    Update views.py
+
+commit 525cb951b32c7aa33cb0709badc809109103a5d1
+Merge: 4303694 9eeae93
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:58:23 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 43036944cffee1a642eb5c7f5540d694e8911590
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:58:12 2020 -0600
+
+    Tipo reward
+
+commit 9eeae93241475300fd729e77b04282bb908c7910
+Merge: e4bfe82 fce5d3c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 13:52:16 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit e4bfe82b68933fc87a1fba4ed9751477646e8125
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 13:50:57 2020 -0600
+
+    todo
+
+commit fce5d3c925ffbbc289f0382de95a92cd95ec91d2
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:50:14 2020 -0600
+
+    Cambios en landing
+
+commit a6491d0b970121d8a123e5ddd8e473dc0623350d
+Merge: cb9e419 b1d19bd
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 13:33:26 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit cb9e419ce5fdde7ee508094f684dccf8444cfd89
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 13:33:09 2020 -0600
+
+    Cambio de banners
+
+commit f4b3fbba9fdfa4b0aa36f53c8c8b564bd1a0c833
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 13:28:38 2020 -0600
+
+    com
+
+commit b1d19bd6079b9107fc75f5cb0888ad5bfda02070
+Merge: e02c26d 3d4d4ae
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:27:56 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit e02c26d43475a7be3a7f32d0a9158f7b14b285fe
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:27:47 2020 -0600
+
+    cambio palabra
+
+commit 3d4d4aee551e6bf5fac14506afa6fb06b960e35c
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 13:26:30 2020 -0600
+
+    Imágen gurdabarrnaco
+
+commit 07ca4ad086f88a6d898c2edc2f26724bffc646cc
+Merge: 7913828 c56e2d6
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 13:19:42 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 7913828fc674801681182092e4ca602bd90932fe
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 13:19:34 2020 -0600
+
+    imagen ejemplo
+
+commit c56e2d6975cf4634366c2a48cc266e404f1ade06
+Merge: f18cb22 d07d90d
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:16:33 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit f18cb222ba2169f67259f32d25337d6508ffdd8f
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:16:25 2020 -0600
+
+    Ganaste
+
+commit d07d90dec57a81916794b18aa3acd5e58aeefd4d
+Merge: 6941b2c e8d6732
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 13:11:49 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 6941b2cc4c1d767d0d694afdad1ff6811982275e
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 13:11:35 2020 -0600
+
+    Nuevas imágenes
+
+commit e8d67327fd63058eba86ecf0b68455d59a58be12
+Merge: 2e3c49f a1b7249
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 13:09:36 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 2e3c49f0b75fc2535d464d85c4ef02bf91b774c9
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 13:09:26 2020 -0600
+
+    cambios correo
+
+commit a1b72498603c51ce61ff051090d5709e1aae1ac6
+Merge: 73ce23f 1d4a59d
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:03:00 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 73ce23f6da1266601c127719f403e68c9fff94e9
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:02:57 2020 -0600
+
+    Boton
+
+commit 8e58892ae9fa8bfe2ae64507c3adf8281432c324
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 13:00:42 2020 -0600
+
+    Cambios botnes juego
+
+commit 1d4a59d01b25c1355c0085684e40bd5024bcfa4c
+Merge: 099d9e7 40c4be9
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 12:38:21 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 099d9e7b5b97db1c8367bb7a19a5bc350091d793
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 12:38:04 2020 -0600
+
+    cambios
+
+commit 40c4be9b8a6ebdc306278d6d4dea7a69bd77e822
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 12:36:25 2020 -0600
+
+    GANASTE
+
+commit 9b2d642fba4d7b7ffba16006d5cadc58bfd4a33d
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 12:27:36 2020 -0600
+
+    todo
+
+commit ab625853b6988552b825308e7e0972f16fadd4ec
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 12:00:21 2020 -0600
+
+    Cambios imagenes
+
+commit b6a2f6032ecf8f334cec17e621ee9a8ddc3ba1b8
+Merge: e877919 28a38dc
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 11:35:35 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 28a38dc7d4ac67fff5d2d987469c127699afb118
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 11:22:39 2020 -0600
+
+    cambios front 2
+
+commit edcdae6da9c30f7e9e0efd7129a5148b71c54e91
+Merge: 6bdf5ba 50edde8
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 11:17:02 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 6bdf5badbbe038c3c2f6b5d2bd8c512daf8453a5
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 11:16:57 2020 -0600
+
+    Cambios Front
+
+commit 50edde85c34be34bb6b74f139e1244a3b2feb5bb
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 11:16:26 2020 -0600
+
+    Update profile.html
+
+commit b01e837a4ba3dc8822acad75d8ee2a04ef3e4db2
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 11:11:38 2020 -0600
+
+    cambios de perfil
+
+commit 482610fcba3d05f94877322940c603a30328970d
+Merge: aea01db 9a249d3
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 10:40:20 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit aea01db083156433b3d0318cbf16b622b2509ecb
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 10:40:08 2020 -0600
+
+    cambio rapido
+
+commit 9a249d3698a8359f0f01c42269ff7dc563c43151
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 10:23:21 2020 -0600
+
+    Cambios front
+
+commit e8779199a4493c91925f8fda78bb2a2b7c091675
+Merge: 53a0c72 403e6eb
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 10:23:11 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 53a0c72ed6e365e0b4ec0b5061b56f2e5aaae384
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 10:23:08 2020 -0600
+
+    Update premio3.jpg
+
+commit 403e6eba05a4ce628e090426b1c8d893f1c0ab54
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Mon Nov 16 10:10:01 2020 -0600
+
+    Cambios Front
+
+commit d0e2c35687efa616de412af522ccf0057558034a
+Merge: e1de3b9 31ef7ac
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 09:39:11 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit e1de3b9a271a1952d314ec989caa793fd0bcae90
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 16 09:38:35 2020 -0600
+
+    cambios perfil
+
+commit 31ef7ac76c54ff64c817a821ec9fc7151c4be40c
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 16 07:19:39 2020 -0600
+
+    Cambios Front
+
+commit 4b2dd51991247623d03670763698baa911ead663
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Sun Nov 15 21:56:19 2020 -0600
+
+    Update home.html
+
+commit b90cd9700348b13c53bf49038949a0265fac1d18
+Merge: 5b80c56 a7cc1cd
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Sun Nov 15 21:51:12 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 5b80c56635cb8fb0d9e874751d82e0c6bbb4cbc2
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Sun Nov 15 21:50:53 2020 -0600
+
+    parte administrativa
+
+commit a7cc1cd9889129f8e30d1702d14d6cb4c89a6722
+Merge: 04fdd8d ce3c6b2
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Sun Nov 15 15:07:31 2020 -0600
+
+    updated, added changes in swal.fire component
+
+commit 04fdd8d6b47509797da008f209e228c7edb31254
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Sun Nov 15 13:08:14 2020 -0600
+
+    fixed, game and sounds, added activate and desactivate sound
+
+commit ce3c6b23e62aa5b6f26867b477cd955787ab948f
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Fri Nov 13 20:38:55 2020 -0600
+
+    cambios idioma
+
+commit 8264878c958740ec13b28ae753604e408b0f91eb
+Merge: 1a7f1a9 fd3c756
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Fri Nov 13 19:19:15 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 1a7f1a96dee5ad72dd59eb0e4014e5338cdf5bf4
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Fri Nov 13 19:19:05 2020 -0600
+
+    cambios Login
+
+commit fd3c756d33817655ba06d80eef008702aaa3609c
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Fri Nov 13 17:37:22 2020 -0600
+
+    Padding progress bar
+
+commit 1cb5fb45b5528a1c3f667437193d7c84ad26e2f2
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Fri Nov 13 17:35:59 2020 -0600
+
+    Cambios mamalones
+
+commit 34f3740ccd7a6161f1bf95f03877993e63a179d6
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Fri Nov 13 16:20:00 2020 -0600
+
+    Cambios front 13112020 1619
+
+commit b4a4dc064917cd4ef68593a29d839aa8db966add
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Fri Nov 13 15:23:02 2020 -0600
+
+    cambio texto
+
+commit 59fa91e4aa25cb28d235a363764126501656bc4f
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Fri Nov 13 15:21:30 2020 -0600
+
+    Cambios Landing 13112020 15
+
+commit 9312d204c24e1313740e4d1f792414f17245725f
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Fri Nov 13 09:05:51 2020 -0600
+
+    cambio en nombres de imagenes
+
+commit 5a61d5e33957160d4b66708a8ddfecf8241ede05
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Fri Nov 13 08:42:50 2020 -0600
+
+    cambio rapido
+
+commit 777709efc34c5e65a8eea71e05d4f60a4e53b805
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Fri Nov 13 08:38:02 2020 -0600
+
+    version jc
+
+commit af7572a201ffb95299c11894f8855477c803051f
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Fri Nov 13 08:33:57 2020 -0600
+
+    validacion edad
+
+commit 954732826c75b1670f657695d5173492697192d5
+Merge: 8b4e9b4 3ecff18
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Fri Nov 13 08:04:04 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 8b4e9b410e945d0e96e54535f3413546f33e6da9
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Fri Nov 13 08:03:56 2020 -0600
+
+    Edad
+
+commit 3ecff185d3296c108db536163abb298557dc302d
+Merge: c37f46c fa23189
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Fri Nov 13 07:32:37 2020 -0600
+
+    Merged with changes from Jose
+
+commit c37f46ce6c45f224d717644522830d768a87e005
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Fri Nov 13 07:28:24 2020 -0600
+
+    fixed final card duplicated
+
+commit fa23189329710c3a166203a8d0066736559d310d
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Fri Nov 13 02:09:16 2020 -0600
+
+    Commit Casi final
+
+commit 297bbfb11196e84321888bca95edcb2d5865be20
+Merge: 8d91c37 1ade7b0
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Fri Nov 13 01:23:09 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 8d91c375a3ed3e659a616408bda964166d41883a
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Fri Nov 13 01:23:01 2020 -0600
+
+    Cambio en inicio
+
+commit 1ade7b06da5496dc794340c0710646d213df7c4f
+Merge: f06dfab 1a7bd3c
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Fri Nov 13 01:19:50 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit f06dfabd0162012a0212f77e42c5f8281d74c754
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Fri Nov 13 01:19:27 2020 -0600
+
+    added redirect
+
+commit 1a7bd3c3eb50e44f6d2146ff9b05964090838239
+Merge: 868c85b 76df3f1
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Fri Nov 13 00:47:43 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 868c85bf61b5188423db512047e6e3b8a7304460
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Fri Nov 13 00:47:41 2020 -0600
+
+    Cambio en panel principal
+
+commit 76df3f126ce7efe52ffddcaba5d73fd651882cc5
+Merge: 6d6185c 895742d
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Fri Nov 13 00:40:56 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 6d6185c3dae70d84a04b85cc473fdc4cba908dbe
+Merge: 08591d6 473d3ed
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Fri Nov 13 00:40:29 2020 -0600
+
+    added, sounds by each card and modal
+
+commit 895742d69923fcb84b90afb546c54212e13bf5ac
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 23:55:40 2020 -0600
+
+    imagen tickets
+
+commit 08591d6694ab086c5fca00d6126aca08841e94bb
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Thu Nov 12 23:55:04 2020 -0600
+
+    added sounds for game
+
+commit 473d3ed67f50a9e64b7b705f9f9b91d106cf1ea4
+Merge: 8a51f54 748b5ff
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 23:51:22 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 8a51f54fcbb5870250feaba5ba1e4c7f0941a982
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 23:51:11 2020 -0600
+
+    Cambios imágenes landing
+
+commit 748b5ff4abb6b43cf28bb8921b178779140d1c9d
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 23:44:38 2020 -0600
+
+    redencion
+
+commit 7179d05f5c667abcf7dcedb0d25f337ec11d8e5b
+Merge: cf533f8 6b687c4
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 22:52:56 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 6b687c4ba61954c7dd01eb4a79fe5f69d5f07ac6
+Merge: 7344918 c5e8218
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 22:32:56 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 7344918ae519e375319e7c31c331a2710fd42b7f
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 22:32:45 2020 -0600
+
+    todo push
+
+commit c5e8218b422e356d178ede15e67dc84b89d28457
+Author: josecardleon <jdeleon@omg.com.gt>
+Date:   Thu Nov 12 22:28:28 2020 -0600
+
+    Cambios Front
+
+commit 161f657efe65d153df8a3f1eb2914aab9dc28d71
+Merge: cee859e 12641a1
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Thu Nov 12 21:56:10 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit cee859ec1b509855766669ce094725fef1a1c82b
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Thu Nov 12 21:55:49 2020 -0600
+
+    added audio but, it is not working
+
+commit 12641a124bace8259acd5d0922a691ee36becdc3
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 20:40:07 2020 -0600
+
+    cambios  reward
+
+commit 8560ecf54e7cc7291492e600c0cbf5479d04e6c9
+Merge: bd0d055 d58cacd
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 19:20:48 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit bd0d055d05295519c09fc78fdb44547d76b7923c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 19:20:25 2020 -0600
+
+    cambios todo
+
+commit cf533f859f6a23360797d4f3b3af7d32f8207505
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 17:29:29 2020 -0600
+
+    responsive animaciones
+
+commit d58cacd526394f35af592e5ccfbf9d26c42ba20d
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 17:21:17 2020 -0600
+
+    Cambios
+
+commit 4533a9748ffa2e456951a2389c2a86c0447a47fe
+Merge: bde135c 6859f38
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 09:23:10 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit bde135c92434a8d8573adbefae19dcc87f0e0ce6
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 09:23:00 2020 -0600
+
+    rede
+
+commit 6859f38e33650e058bee1b12779b97407cdb48f8
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 09:16:07 2020 -0600
+
+    botonespartida
+
+commit ce01a3068031c5edded20dd440adcaa70ac76f5e
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 09:07:58 2020 -0600
+
+    participaparaganar
+
+commit f6dfeb0d83d943f5b4b039ac978fc434a4c066cf
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Thu Nov 12 08:59:10 2020 -0600
+
+    delete console.log
+
+commit bcf114445522413fbc0d35d0701830b40f9e8c26
+Merge: b6e2edb 5ef5d17
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Thu Nov 12 08:56:42 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit b6e2edb0be997532cc2103245f48e964cbd26f9b
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Thu Nov 12 08:55:35 2020 -0600
+
+    added, modal animation begin and end
+
+commit 5ef5d1702038ad033b037bfe2e9c1eb20ac0c3ad
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 08:47:34 2020 -0600
+
+    Update lamarimba-80.jpg
+
+commit 5c4569712530c64831d10dc7eb510871424ca260
+Merge: ba8cee0 32ddb8d
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 08:39:59 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit ba8cee0909d95518c768a99d53c63977820766c4
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 08:39:49 2020 -0600
+
+    gifs
+
+commit 32ddb8d49adf122b05663d4f0ecae2ae0daee695
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 08:37:35 2020 -0600
+
+    Update settings.py
+
+commit cf5ee73133457adb3fc4690f9a495aaf2d1a9614
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 08:36:00 2020 -0600
+
+    full
+
+commit 438c71a5d5f195159db8b418b188cc0d1d902291
+Merge: c6bb380 f69453a
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 07:30:37 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit c6bb380833db4db8110f99514c21f77f8d9f4fff
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Thu Nov 12 07:29:35 2020 -0600
+
+    cards sound
+
+commit f69453a77eb44f5edbd9168c0572c6d4bd13b437
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Thu Nov 12 03:20:36 2020 -0600
+
+    Front V01
+
+commit 0901d9dfae55515d5dc9a249c5735b071392353c
+Merge: 54d0f84 8b040f8
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Thu Nov 12 00:08:00 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 54d0f8436e82ed8b0087616424652254a3bd7753
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Thu Nov 12 00:07:43 2020 -0600
+
+    UPDATED, added styles, and flowers
+
+commit 8b040f893fe8eda2c9aa43b6fe1099c6be998270
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 23:58:56 2020 -0600
+
+    Cambios Front Historial
+
+commit 22cfbcfcf103723a1663856d125be1d634cb08f4
+Merge: bd39be8 ca2334e
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 23:28:52 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit bd39be80f4b2a70a743e3f2471395f0110ff221e
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 23:28:48 2020 -0600
+
+    Front Vistas Perfil, historial
+
+commit ca2334eb9bffee3ac12b9851d4f21a4ce92a8ec5
+Merge: ae67dc0 4ae9da2
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Wed Nov 11 22:34:41 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit ae67dc036b7c64e22e912393ac9d409574f2a6c9
+Merge: 8f76de1 f3a3549
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Wed Nov 11 22:34:23 2020 -0600
+
+    show coin
+
+commit 36872651fad4c7f5e962fdbd65684b4b8231cec7
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 22:30:56 2020 -0600
+
+    imagenes de tarjetas
+
+commit 4ae9da2b582bd400fdded7b1892b46109766e47d
+Merge: 5326261 f3a3549
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 22:25:46 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 5326261efdb43fe280e9b71478099c1677f94592
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 22:25:41 2020 -0600
+
+    Cambios Front v2 Landing
+
+commit 8f76de1cdef75b59b658b2703ad5b38e472712bc
+Author: Alan Duarte <alanduam@gmail.com>
+Date:   Wed Nov 11 20:50:11 2020 -0600
+
+    Added loaders and cards
+
+commit f3a3549b8513dea093de59a3a4e9ab15ce593304
+Merge: 4206adf 15758a6
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 11 20:29:41 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 4206adff9c2df09bd93669cf025a80c6b6a9537d
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 11 20:29:33 2020 -0600
+
+    Update views.py
+
+commit 15758a611d5f6f327ecf93a97e7b67e9e0180808
+Merge: c768502 a26927f
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 20:27:14 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit c76850256f1a29fecfe7278d28642571e01cd58a
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 20:27:02 2020 -0600
+
+    Banner 2
+
+commit a26927f974b88d78956a8afff3c5fa8aae580501
+Merge: eb16209 ea6eaaf
+Author: Jorge Quiñonez <jquinonez@wol.group>
+Date:   Wed Nov 11 20:16:25 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit eb162091e94a59a01c6a408d6910749ca85c93a6
+Author: Jorge Quiñonez <jquinonez@wol.group>
+Date:   Wed Nov 11 20:16:23 2020 -0600
+
+    cambios vergas
+
+commit ea6eaaf79d3459c5f5b594e4c80038a700cbb19f
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 18:12:34 2020 -0600
+
+    Sonidosytarjetas
+
+commit 118283222b15304d5cc3a578000635bfc034af71
+Merge: a158946 56798f8
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 17:24:42 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit a158946a1c1212afd22f6629909f6c4ab3fb8ec9
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Wed Nov 11 17:24:39 2020 -0600
+
+    Cambios imágemes
+
+commit 56798f8fcea9ab0dad7b593c15de0c8e82772ed9
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 11 10:43:49 2020 -0600
+
+    Update base.html
+
+commit 189e1c9c5803cf19ee1bdbce18a53e434e32f839
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 11 10:42:31 2020 -0600
+
+    CAMBIOS PERFIL
+
+commit 9d90d9e46ca6db88435a9f6f3667c3c514b951a1
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 10 23:49:22 2020 -0600
+
+    Cambios Front
+
+commit 5fcc112e58664912618cd43704dd6b9cadd34ff6
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 10 23:34:40 2020 -0600
+
+    Front Dashboard
+
+commit ea815b89287adb549b105fd441eb34fb7d186748
+Merge: 9819cc1 d3e2ab9
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 10 22:11:03 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 9819cc1f960bedb4d032efca2d3a13743a595bbf
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 10 22:11:00 2020 -0600
+
+    Update landing.html
+
+commit d3e2ab92870eb359cbd1e31679bfaeb204494e8b
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 10 15:58:47 2020 -0600
+
+    todo
+
+commit dfdc395330e26606eb05c2da9eef6d7300b148df
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 10 10:47:09 2020 -0600
+
+    Cambios registro
+
+commit 6c62929b4d00abce124c58dc0d48011c9941fb9b
+Merge: 7c8dc36 6d25555
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 10 10:36:54 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 7c8dc361bf6ed91ae6ddb771693b00b1671a43d1
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Tue Nov 10 10:36:40 2020 -0600
+
+    cambios
+
+commit 6d25555c54c107e7faf9d9e5eefc03966b5464dd
+Merge: 46ea2d0 7cf8229
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 10 10:25:53 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 46ea2d0c55895983df54137d6a1a1e66b3e7424d
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Tue Nov 10 10:25:49 2020 -0600
+
+    Front Landing Registro Login
+
+commit 7cf8229e8cb242c53f07671479e031f2c96183bb
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 9 15:26:47 2020 -0600
+
+    Update views.py
+
+commit e3b2da92735493517d21dc53f2eba23eed8baccf
+Merge: 7c03896 3b3c3bf
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 9 14:58:00 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit 7c038960c092c2a88184f2ed897160328a411912
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 9 14:57:13 2020 -0600
+
+    landing
+
+commit 3b3c3bf36f0d8ec46ba89b86eb53ad4124fff506
+Merge: dc4421f 31af818
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 9 14:46:15 2020 -0600
+
+    Merge branch 'main' of https://github.com/orellananery/LaChalupaTona into main
+
+commit dc4421f562a216a1356bc9176df2d2f963adc2d5
+Author: Jose Carlos de León <josecar_85@hotmail.com>
+Date:   Mon Nov 9 14:46:10 2020 -0600
+
+    Front Inicio
+
+commit 31af818afe8d0f6ba26f36a5cfb10f5eae1dd937
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 9 11:08:34 2020 -0600
+
+    para juego
+
+commit b13eca051d33f84f3f6fed88f8cfdbd2fc0cb875
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 9 08:18:26 2020 -0600
+
+    cambios
+
+commit f8e96a67ec79a22b9dee2d3b4c3ed0f4a622e749
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Nov 4 08:12:36 2020 -0600
+
+    cambios
+
+commit dce5aa1ed586eea6256cf34485b01c8eb9e9653c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Nov 2 10:46:32 2020 -0600
+
+    cambios
+
+commit e5300d66b2d9f1cf5bd3f204f8bdd067b8009caf
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Oct 21 15:17:11 2020 -0600
+
+    cambios
+
+commit b1cfb170e9ffc984c0ebd6b18b2a3a6529d8c140
+Author: root <root@ip-192-168-0-8.ec2.internal>
+Date:   Wed Oct 21 21:15:15 2020 +0000
+
+    yaml
+
+commit 67a0bf41dab2fbbb1ea5e5c4a0346f7d5f364b20
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Oct 21 14:10:24 2020 -0600
+
+    Update docker-compose.yaml
+
+commit ca12b8ae4a1a9c19f5b7a99269a086419b321741
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Oct 21 12:53:28 2020 -0600
+
+    todo
+
+commit fd69d0fff49c559c61b0a400c18f0c074d6ef055
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Oct 21 12:31:01 2020 -0600
+
+    nginx config
+
+commit 44f06609da36412ba815c15fdfab81dbec2f6788
+Author: root <root@ip-192-168-0-8.ec2.internal>
+Date:   Wed Oct 21 18:26:53 2020 +0000
+
+    todos
+
+commit 3198989d47e1d4d43a8d7d6aa90bba6d1baaf4d8
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Oct 21 09:21:26 2020 -0600
+
+    Update docker-compose.yaml
+
+commit d9a4e7a23f71113f792dd824268e635a974d70b7
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Oct 21 09:16:02 2020 -0600
+
+    docker2
+
+commit 6f2a81ef97ad968a17f1115fd16e9cf6ef84839c
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Wed Oct 21 09:08:36 2020 -0600
+
+    cambios docker
+
+commit 69dadf7c0e6f43e9c9e3166b75293d322010d29a
+Author: root <root@ip-192-168-0-8.ec2.internal>
+Date:   Wed Oct 21 15:03:36 2020 +0000
+
+    todo cambios
+
+commit b820302767f626ca583699a1bb99bdea7a81b8aa
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Oct 19 16:24:31 2020 -0600
+
+    cmabio
+
+commit fbfba99137fbf179fbf45751f0a2e607ee7bfbfe
+Author: root <root@ip-192-168-0-8.ec2.internal>
+Date:   Mon Oct 19 22:22:02 2020 +0000
+
+    todos
+
+commit 5bd1be97959f5c4227db6bf3b4fa3912ca72d5d3
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Oct 19 15:48:18 2020 -0600
+
+    server config
+
+commit 325bb3b43127d657832971a6c146f4a03c6abdb8
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Oct 19 14:20:29 2020 -0600
+
+    primero
+
+commit 3a0fe320a4605a0e10af4e967e6d016a334cb4d0
+Author: Neryop12 <pancho_op12@hotmail.com>
+Date:   Mon Oct 19 14:19:44 2020 -0600
+
+    Initial commit

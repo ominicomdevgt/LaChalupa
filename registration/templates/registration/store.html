@@ -1,0 +1,46 @@
+{% extends "registration/baseadmin.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+    <div class="col-md-12">
+        <h1> Sucursal: {{ user.store.name }} - Listado de Ganadores</h1>
+        <a href="{% url 'home-page'%} " style="color: #000000;text-align: center;font-size:30px;color: #047835;">Antes de entregar el premio porfavor recarga la pagina</a>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div>
+        <a href="{% url 'premios-tienda' pk=user.store.pk %}" class="btn btn-lg btn-outline-info">Listado Ganadores</a>
+        <a href="{% url 'ganador' %}" class="btn btn-lg btn-outline-info">Ganadores Otras tiendas</a>
+      </div>
+    </div>
+    <table class="table table-hover" id="table_id">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cedula</th>
+            <th scope="col">Premio</th>
+            <th scope="col"></th>
+          </tr>
+        </tbody>
+        <tbody>
+          {% for game in games %}
+            <tr>
+              <th>{{ game.pk }}</th>
+              <th>{{ game.user.first_name }}  {{ game.user.last_name }} </th>
+              <th>{{game.user.profile.DNI}}</th>
+              <th>{{game.reward.type_reward}} {{game.reward.gender}} {{game.reward.size}}</th>
+              <th><a href="{% url 'reward-id' pk=game.pk %}" class="btn btn-info">Entregar Premio</a></th>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    
+   <script>
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+   </script>
+    
+{% endblock content %}

@@ -1,0 +1,57 @@
+{% extends "registration/baseadmin.html" %}
+{% block content %}
+<style>
+  #map {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  #wrap-map {
+    height: 300px;
+    max-height: 500px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: static;
+  }
+</style>
+<div class="viewportregistro pb-5"  >
+    <div class="container d-flex flex-wrap justify-content-center align-items-center">
+     
+    <div class="col-md-8 col-sm-12" style="
+    border-radius: 15px;
+    border: solid 3px #eaba15;padding:30px;">
+        <h1 style="color: #047835;text-align: center;font-size:50px"> {{usuario.user.first_name}} </h1><br/>
+        <div class="media">
+          <p style="width:100%;text-align: center;"><img  src="{{ usuario.image.url }}" style="width:300px;max-width:90%;position: relative;margin: 0 auto;"></p>
+        </div>
+        <div style="text-align: center !important;">
+            <h4>Correo: {{ usuario.user.username}}</h4>
+            <h4>Cedula: {{ usuario.DNI}}</h4>
+              <form action="" method="post" id="reward" >
+                {% csrf_token %}
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="True" id="verficado" name="verficado">
+                        <label class="h4" for="verficado" >
+                            Verificado
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comentario" style="font-size:20px">Comentario</label>
+                    <textarea class="form-control" id="comentario" name="comentario" rows="2">{{ usuario.comment }}</textarea>
+                </div>
+                <button class="btn reward" id="btnforms" type="submit">Verificar</button>
+          </form>
+          
+          
+        </div>
+       
+      
+    </div>
+    
+  </div>
+
+  {% endblock content %}

@@ -1,0 +1,124 @@
+{% load static %} {% load bootstrap4 %} {# import bootstrap4/bootstrap3 #} {% bootstrap_css %} {# Embed Bootstrap CSS #} {% bootstrap_javascript jquery='full' %} {# Embed Bootstrap JS+jQuery #}
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N247FSR');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/main.css' %}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/style.css' %}">
+    {% block head %}{% endblock %}
+    <link rel="icon" type="image/png" href="../../../media/home/favicon.png">
+    
+    
+     {% if title %}
+    <title>CHALUPA TOÑA - {{ title }}</title>
+    {% else %}
+    <title>CHALUPA TOÑA</title>
+    {% endif %} {% block script %}{% endblock %}
+</head>
+<style>
+    .alert{
+    font-size:25px !important;
+}
+.close{
+        font-size: 60px;
+    }
+
+    input:valid {
+ border: 1px solid #ccc;
+} 
+    input:invalid {
+        border: 1px solid rgb(255, 25, 25);
+        box-shadow: 0px 0px 3px rgb(255, 25, 25);;
+}
+.invalid-feedback{
+    font-size: 18px;
+}
+</style>
+
+
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N247FSR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md" >
+            <div class="container">
+                <a class="navbar-brand mr-4" href="{% url 'inicio-tombola' %}"><img src="../../../media/home/logo_menu.png" width="145"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-auto">
+
+
+                    </div>
+                    <!-- Navbar Right Side -->
+                    <div class="navbar-nav">
+                        {% if user.is_authenticated %}
+                      
+                        <a class="nav-item nav-link" href="{% url 'logout' %}"><img src="../../../media/home/bullet_menu.png"> CERRAR SESIÓN</a>
+                        {% endif %}
+                     
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        {% if messages %} {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+
+        {% endfor %} {% endif %}
+    </div>
+
+
+    {% block content %}{% endblock %}
+
+    <footer>
+
+
+       
+    </footer>
+
+
+
+    <script>
+        $(document).ready(function() {
+
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 300, function() {
+
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>

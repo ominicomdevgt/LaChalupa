@@ -1,0 +1,12 @@
+<p>
+    import os
+    import numpy as np
+    import random
+
+    for i in range (1, 10):
+        print ('PROCESO ' + repr (i))
+        randdash = np.random.choice(usuario_array, 10, replace=False)
+        perfil = Profile.objects.filter(user_id__in=randdash, verificate=True)[:10]
+        context['usuarios'] = perfil
+    print ()
+</p>

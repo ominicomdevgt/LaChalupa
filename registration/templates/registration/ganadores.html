@@ -1,0 +1,55 @@
+{% extends "registration/baseadmin.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+    <div class="col-md-6">
+        <h1>Adminstracion de tiendas</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div>
+        <a href="{% url 'home-page' %}" class="btn btn-lg btn-outline-info">Regresar</a>
+      </div>
+    </div>
+    
+    <br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <table class="table table-hover" id="table_id">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Ganador</th>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Premio</th>
+                    <th scope="col">Sucursal</th>
+                    <th scope="col">Fecha del Ganador</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  {% for store in ganadores %}
+                    <tr>
+                      <th>{{ store.pk }}</th>
+                      <th>{{ store.user.first_name }}</th>
+                      <th>{{ store.user.profile.DNI }}</th>
+                      <th>{{ store.reward.type_reward }} {{ store.reward.gender }} {{ store.reward.size }}</th>
+                      <th>{{ store.store }}</th>
+                      <th>{{ store.date }}</th>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+        </div>
+        
+    </div>
+    
+    
+   <script>
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+   </script>
+    
+{% endblock content %}
